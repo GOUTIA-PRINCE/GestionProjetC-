@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|d:\\etudes\\licence\\semestre 1\\c#\\projet\\gestionprojet\\gestionprojet\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|d:\\etudes\\licence\\semestre 1\\c#\\projet\\gestionprojet\\gestionprojet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -106,8 +106,7 @@
               "RelativeToolTip": "GestionProjet\\Views\\LoginForm.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:40:25.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T14:40:25.081Z"
             },
             {
               "$type": "Document",
@@ -119,8 +118,7 @@
               "RelativeToolTip": "GestionProjet\\Controllers\\LoginController.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAYwDgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T13:50:03.115Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T13:50:03.115Z"
             },
             {
               "$type": "Document",
@@ -132,8 +130,7 @@
               "RelativeToolTip": "GestionProjet\\Controllers\\MainController.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAvwCkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T13:51:08.484Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T13:51:08.484Z"
             },
             {
               "$type": "Document",
@@ -145,8 +142,7 @@
               "RelativeToolTip": "GestionProjet\\Repositories\\UtilisateurRepository.cs",
               "ViewState": "AgIAAKwAAAAAAAAAAAAjwKkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T13:47:10.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T13:47:10.329Z"
             },
             {
               "$type": "Document",
@@ -171,8 +167,7 @@
               "RelativeToolTip": "GestionProjet\\Views\\LoginForm.Designer.cs",
               "ViewState": "AgIAAGAAAAAAAAAAAAAYwD8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:15:44.296Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T14:15:44.296Z"
             },
             {
               "$type": "Document",
@@ -184,8 +179,7 @@
               "RelativeToolTip": "GestionProjet\\Program.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAAABsAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T14:53:06.094Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T14:53:06.094Z"
             },
             {
               "$type": "Document",
@@ -196,8 +190,7 @@
               "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\LoginForm.cs [Design]",
               "RelativeToolTip": "GestionProjet\\Views\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:22:15.098Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-02-20T14:22:15.098Z"
             },
             {
               "$type": "Document",
@@ -208,8 +201,7 @@
               "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.cs [Design]",
               "RelativeToolTip": "GestionProjet\\Views\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:45:19.846Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-02-20T14:45:19.846Z"
             },
             {
               "$type": "Document",
@@ -220,8 +212,7 @@
               "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\UtilisateurForm.cs [Design]",
               "RelativeToolTip": "GestionProjet\\Views\\UtilisateurForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:46:36.118Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-02-20T14:46:36.118Z"
             },
             {
               "$type": "Document",
@@ -233,8 +224,7 @@
               "RelativeToolTip": "GestionProjet\\Views\\UtilisateurForm.Designer.cs",
               "ViewState": "AgIAAKoAAAAAAAAAAAAswLUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:46:39.833Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T14:46:39.833Z"
             },
             {
               "$type": "Document",
@@ -246,8 +236,7 @@
               "RelativeToolTip": "GestionProjet\\Views\\UtilisateurForm.cs",
               "ViewState": "AgIAALgAAAAAAAAAAAAswNEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:46:53.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T14:46:53.638Z"
             },
             {
               "$type": "Document",
@@ -271,8 +260,7 @@
               "RelativeToolTip": "GestionProjet\\Views\\MainForm.Designer.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAswIAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:45:23.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T14:45:23.624Z"
             },
             {
               "$type": "Document",
@@ -284,8 +272,7 @@
               "RelativeToolTip": "GestionProjet\\Views\\MainForm.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAA9wDIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:45:43.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T14:45:43.543Z"
             },
             {
               "$type": "Document",
