@@ -1,6 +1,7 @@
-﻿using System.Windows.Forms;
+﻿
 using GestionProjet.Models;
 using GestionProjet.Views;
+using System.Windows.Forms;
 
 namespace GestionProjet.Controllers
 {
@@ -39,7 +40,7 @@ namespace GestionProjet.Controllers
         {
             if (ConfirmerAction("Voulez-vous vraiment quitter l'application ?"))
             {
-                //System.Windows.Forms.Application.Exit();
+                Application.Exit();
             }
         }
     }

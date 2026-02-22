@@ -21,6 +21,7 @@ namespace GestionProjet.Views
 
         private void btnConnexion_Click(object sender, EventArgs e)
         {
+            //trim() permet de supprimer les espaces inutile au debut et a la fin 
             _controller.Authentifier(txtEmail.Text.Trim(), txtMotDePasse.Text);
         }
 
@@ -38,6 +39,16 @@ namespace GestionProjet.Views
                 return true;
             }
             return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        private void lnkMotDePasseOublie_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            _controller.AfficherPageMotDePasseOublie();
+        }
+
+        private void lnkCreerCompte_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            _controller.AfficherPageInscription();
         }
     }
 }

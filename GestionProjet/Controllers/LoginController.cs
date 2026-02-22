@@ -53,5 +53,17 @@ namespace GestionProjet.Controllers
                 Application.Exit();
             }
         }
+
+        public void AfficherPageInscription()
+        {
+            var registerForm = new RegisterForm();
+            var registerController = new RegisterController(registerForm);
+            NaviguerVers(registerForm);
+        }
+
+        public void AfficherPageMotDePasseOublie()
+        {
+            AfficherMessage("Cette fonctionnalité sera bientôt disponible.", "Information");
+        }
     }
 }

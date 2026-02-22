@@ -45,3 +45,4 @@ D:\Etudes\licence\semestre 1\C#\projet\GestionProjet\GestionProjet\bin\Debug\Sys
 D:\Etudes\licence\semestre 1\C#\projet\GestionProjet\GestionProjet\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\Etudes\licence\semestre 1\C#\projet\GestionProjet\GestionProjet\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\Etudes\licence\semestre 1\C#\projet\GestionProjet\GestionProjet\obj\Debug\GestionP.B03D9BCD.Up2Date
+D:\Etudes\licence\semestre 1\C#\projet\GestionProjet\GestionProjet\obj\Debug\GestionProjet.Views.LoginForm.resources

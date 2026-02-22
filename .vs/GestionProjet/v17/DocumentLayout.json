@@ -3,44 +3,84 @@
   "WorkspaceRootPath": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|d:\\etudes\\licence\\semestre 1\\c#\\projet\\gestionprojet\\gestionprojet\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\repositories\\utilisateurrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\repositories\\utilisateurrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\controllers\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\controllers\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|d:\\etudes\\licence\\semestre 1\\c#\\projet\\gestionprojet\\gestionprojet\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|d:\\etudes\\licence\\semestre 1\\c#\\projet\\gestionprojet\\gestionprojet\\views\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|d:\\etudes\\licence\\semestre 1\\c#\\projet\\gestionprojet\\gestionprojet\\repositories\\utilisateurrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\repositories\\utilisateurrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\utilisateurform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\utilisateurform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\data\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\data\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\mainform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\mainform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\controllers\\utilisateurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\controllers\\utilisateurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\controllers\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\controllers\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\repositories\\iutilisateurrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\repositories\\iutilisateurrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\utilisateurform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,34 +89,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\utilisateurform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\utilisateurform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\controllers\\utilisateurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\controllers\\utilisateurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\repositories\\iutilisateurrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\repositories\\iutilisateurrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\data\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\data\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\models\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,8 +106,70 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegisterController.cs",
+              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\RegisterController.cs",
+              "RelativeDocumentMoniker": "GestionProjet\\Controllers\\RegisterController.cs",
+              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\RegisterController.cs",
+              "RelativeToolTip": "GestionProjet\\Controllers\\RegisterController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T14:21:15.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegisterForm.cs [Design]",
+              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "GestionProjet\\Views\\RegisterForm.cs",
+              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\RegisterForm.cs [Design]",
+              "RelativeToolTip": "GestionProjet\\Views\\RegisterForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T14:12:25.204Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DatabaseContext.cs",
+              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Data\\DatabaseContext.cs",
+              "RelativeDocumentMoniker": "GestionProjet\\Data\\DatabaseContext.cs",
+              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Data\\DatabaseContext.cs",
+              "RelativeToolTip": "GestionProjet\\Data\\DatabaseContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T13:45:00.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UtilisateurRepository.cs",
+              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Repositories\\UtilisateurRepository.cs",
+              "RelativeDocumentMoniker": "GestionProjet\\Repositories\\UtilisateurRepository.cs",
+              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Repositories\\UtilisateurRepository.cs",
+              "RelativeToolTip": "GestionProjet\\Repositories\\UtilisateurRepository.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAADwv6kAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T13:47:10.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\LoginForm.cs",
+              "RelativeDocumentMoniker": "GestionProjet\\Views\\LoginForm.cs",
+              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\LoginForm.cs [Design]",
+              "RelativeToolTip": "GestionProjet\\Views\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T14:22:15.098Z",
+              "EditorCaption": " [Design]"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 5,
@@ -104,49 +178,25 @@
               "RelativeDocumentMoniker": "GestionProjet\\Views\\LoginForm.cs",
               "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\LoginForm.cs",
               "RelativeToolTip": "GestionProjet\\Views\\LoginForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwAsAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:40:25.081Z"
+              "WhenOpened": "2026-02-20T14:40:25.081Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "GestionProjet\\Controllers\\LoginController.cs",
-              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "GestionProjet\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAYwDgAAAABAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "UtilisateurForm.cs [Design]",
+              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\UtilisateurForm.cs",
+              "RelativeDocumentMoniker": "GestionProjet\\Views\\UtilisateurForm.cs",
+              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\UtilisateurForm.cs [Design]",
+              "RelativeToolTip": "GestionProjet\\Views\\UtilisateurForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T13:50:03.115Z"
+              "WhenOpened": "2026-02-20T14:46:36.118Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainController.cs",
-              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\MainController.cs",
-              "RelativeDocumentMoniker": "GestionProjet\\Controllers\\MainController.cs",
-              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\MainController.cs",
-              "RelativeToolTip": "GestionProjet\\Controllers\\MainController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAvwCkAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T13:51:08.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UtilisateurRepository.cs",
-              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Repositories\\UtilisateurRepository.cs",
-              "RelativeDocumentMoniker": "GestionProjet\\Repositories\\UtilisateurRepository.cs",
-              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Repositories\\UtilisateurRepository.cs",
-              "RelativeToolTip": "GestionProjet\\Repositories\\UtilisateurRepository.cs",
-              "ViewState": "AgIAAKwAAAAAAAAAAAAjwKkAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T13:47:10.329Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "App.config",
               "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\App.config",
               "RelativeDocumentMoniker": "GestionProjet\\App.config",
@@ -159,19 +209,138 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.cs",
+              "RelativeDocumentMoniker": "GestionProjet\\Views\\MainForm.cs",
+              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.cs",
+              "RelativeToolTip": "GestionProjet\\Views\\MainForm.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAWwAwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T14:45:43.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "GestionProjet\\Views\\MainForm.Designer.cs",
+              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.Designer.cs",
+              "RelativeToolTip": "GestionProjet\\Views\\MainForm.Designer.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAswIAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T14:45:23.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainForm.resx",
+              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.resx",
+              "RelativeDocumentMoniker": "GestionProjet\\Views\\MainForm.resx",
+              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.resx",
+              "RelativeToolTip": "GestionProjet\\Views\\MainForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-02-22T13:39:15.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "LoginForm.Designer.cs",
               "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\LoginForm.Designer.cs",
               "RelativeDocumentMoniker": "GestionProjet\\Views\\LoginForm.Designer.cs",
               "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\LoginForm.Designer.cs",
               "RelativeToolTip": "GestionProjet\\Views\\LoginForm.Designer.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAYwD8AAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwD8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:15:44.296Z"
+              "WhenOpened": "2026-02-20T14:15:44.296Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
+              "Title": "UtilisateurController.cs",
+              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\UtilisateurController.cs",
+              "RelativeDocumentMoniker": "GestionProjet\\Controllers\\UtilisateurController.cs",
+              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\UtilisateurController.cs",
+              "RelativeToolTip": "GestionProjet\\Controllers\\UtilisateurController.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAowG0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T13:51:56.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "GestionProjet\\Controllers\\BaseController.cs",
+              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "GestionProjet\\Controllers\\BaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T13:49:35.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "GestionProjet\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "GestionProjet\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T13:50:03.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainController.cs",
+              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\MainController.cs",
+              "RelativeDocumentMoniker": "GestionProjet\\Controllers\\MainController.cs",
+              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\MainController.cs",
+              "RelativeToolTip": "GestionProjet\\Controllers\\MainController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T13:51:08.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IUtilisateurRepository.cs",
+              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Repositories\\IUtilisateurRepository.cs",
+              "RelativeDocumentMoniker": "GestionProjet\\Repositories\\IUtilisateurRepository.cs",
+              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Repositories\\IUtilisateurRepository.cs",
+              "RelativeToolTip": "GestionProjet\\Repositories\\IUtilisateurRepository.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T13:45:53.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "GestionProjet\\Services\\AuthService.cs",
+              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Services\\AuthService.cs",
+              "RelativeToolTip": "GestionProjet\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T14:04:20.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.cs",
+              "RelativeDocumentMoniker": "GestionProjet\\Views\\MainForm.cs",
+              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.cs [Design]",
+              "RelativeToolTip": "GestionProjet\\Views\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T14:45:19.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Program.cs",
               "RelativeDocumentMoniker": "GestionProjet\\Program.cs",
@@ -183,40 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\LoginForm.cs",
-              "RelativeDocumentMoniker": "GestionProjet\\Views\\LoginForm.cs",
-              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\LoginForm.cs [Design]",
-              "RelativeToolTip": "GestionProjet\\Views\\LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:22:15.098Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.cs",
-              "RelativeDocumentMoniker": "GestionProjet\\Views\\MainForm.cs",
-              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.cs [Design]",
-              "RelativeToolTip": "GestionProjet\\Views\\MainForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:45:19.846Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UtilisateurForm.cs [Design]",
-              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\UtilisateurForm.cs",
-              "RelativeDocumentMoniker": "GestionProjet\\Views\\UtilisateurForm.cs",
-              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\UtilisateurForm.cs [Design]",
-              "RelativeToolTip": "GestionProjet\\Views\\UtilisateurForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:46:36.118Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 20,
               "Title": "UtilisateurForm.Designer.cs",
               "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\UtilisateurForm.Designer.cs",
               "RelativeDocumentMoniker": "GestionProjet\\Views\\UtilisateurForm.Designer.cs",
@@ -228,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 21,
               "Title": "UtilisateurForm.cs",
               "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\UtilisateurForm.cs",
               "RelativeDocumentMoniker": "GestionProjet\\Views\\UtilisateurForm.cs",
@@ -240,91 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "GestionProjet\\Services\\AuthService.cs",
-              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Services\\AuthService.cs",
-              "RelativeToolTip": "GestionProjet\\Services\\AuthService.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA8wBAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:04:20.926Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MainForm.Designer.cs",
-              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.Designer.cs",
-              "RelativeDocumentMoniker": "GestionProjet\\Views\\MainForm.Designer.cs",
-              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.Designer.cs",
-              "RelativeToolTip": "GestionProjet\\Views\\MainForm.Designer.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAswIAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:45:23.624Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.cs",
-              "RelativeDocumentMoniker": "GestionProjet\\Views\\MainForm.cs",
-              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.cs",
-              "RelativeToolTip": "GestionProjet\\Views\\MainForm.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAA9wDIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:45:43.543Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UtilisateurController.cs",
-              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\UtilisateurController.cs",
-              "RelativeDocumentMoniker": "GestionProjet\\Controllers\\UtilisateurController.cs",
-              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\UtilisateurController.cs",
-              "RelativeToolTip": "GestionProjet\\Controllers\\UtilisateurController.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAswG0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T13:51:56.686Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "BaseController.cs",
-              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\BaseController.cs",
-              "RelativeDocumentMoniker": "GestionProjet\\Controllers\\BaseController.cs",
-              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\BaseController.cs",
-              "RelativeToolTip": "GestionProjet\\Controllers\\BaseController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAIwB4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T13:49:35.044Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IUtilisateurRepository.cs",
-              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Repositories\\IUtilisateurRepository.cs",
-              "RelativeDocumentMoniker": "GestionProjet\\Repositories\\IUtilisateurRepository.cs",
-              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Repositories\\IUtilisateurRepository.cs",
-              "RelativeToolTip": "GestionProjet\\Repositories\\IUtilisateurRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T13:45:53.843Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "DatabaseContext.cs",
-              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Data\\DatabaseContext.cs",
-              "RelativeDocumentMoniker": "GestionProjet\\Data\\DatabaseContext.cs",
-              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Data\\DatabaseContext.cs",
-              "RelativeToolTip": "GestionProjet\\Data\\DatabaseContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T13:45:00.109Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "Utilisateur.cs",
               "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Models\\Utilisateur.cs",
               "RelativeDocumentMoniker": "GestionProjet\\Models\\Utilisateur.cs",
@@ -336,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "packages.config",
               "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\packages.config",
               "RelativeDocumentMoniker": "GestionProjet\\packages.config",
