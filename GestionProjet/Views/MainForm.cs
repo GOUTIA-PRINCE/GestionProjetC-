@@ -23,15 +23,51 @@ namespace GestionProjet.Views
             lblStatus.Text = $"Connecté en tant que {_utilisateurCourant.Email}";
         }
 
+        public void ChargerVue(Form form)
+        {
+            pnlMainContent.Controls.Clear();
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+            pnlMainContent.Controls.Add(form);
+            form.Show();
+        }
+
         private void menuUtilisateurs_Click(object sender, EventArgs e)
         {
             _controller.OuvrirGestionUtilisateurs();
         }
 
-        private void menuProjets_Click(object sender, EventArgs e)
+        private void menuCreerProjet_Click(object sender, EventArgs e)
+        {
+            _controller.OuvrirCreationProjet();
+        }
+
+        private void menuMesTaches_Click(object sender, EventArgs e)
+        {
+            _controller.OuvrirMesTaches();
+        }
+
+        private void menuToutesTaches_Click(object sender, EventArgs e)
+        {
+            _controller.OuvrirToutesTaches();
+        }
+
+        private void menuTache_Click(object sender, EventArgs e)
+        {
+            // Par défaut, on peut ouvrir toutes les tâches ou juste défiler le menu
+            _controller.OuvrirToutesTaches();
+        }
+
+        private void menuProjet_Click(object sender, EventArgs e)
         {
             _controller.OuvrirGestionProjets();
         }
+        private void menuDashboard_Click(object sender, EventArgs e)
+        {
+            _controller.AfficherDashboard();
+        }
+
         private void menuDeconnexion_Click(object sender, EventArgs e)
         {
             _controller.Deconnexion();

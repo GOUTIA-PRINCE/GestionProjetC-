@@ -1,15 +1,27 @@
 ﻿using System.Windows.Forms;
+using GestionProjet.Views;
 
 namespace GestionProjet.Controllers
 {
     public abstract class BaseController
     {
         protected Form CurrentForm { get; set; }
+        public static MainForm MainView { get; set; }
 
         protected void NaviguerVers(Form form)
         {
-            form.Show();
-            CurrentForm?.Hide();
+            if (MainView != null && form != MainView)
+            {
+                MainView.ChargerVue(form);
+            }
+            else
+            {
+                form.Show();
+                if (CurrentForm != null && CurrentForm != form)
+                {
+                    CurrentForm.Hide();
+                }
+            }
         }
 
         protected void AfficherMessage(string message, string titre = "Information")

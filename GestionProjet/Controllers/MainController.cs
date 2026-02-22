@@ -16,6 +16,24 @@ namespace GestionProjet.Controllers
             _utilisateurCourant = utilisateur;
             _mainForm.SetController(this, utilisateur);
             CurrentForm = mainForm;
+            BaseController.MainView = mainForm;
+            
+            // Afficher le dashboard au démarrage
+            AfficherDashboard();
+        }
+
+        public void AfficherDashboard()
+        {
+            var dashboard = new DashboardForm();
+            // On pourrait charger les stats ici
+            var projetRepo = new Repositories.ProjetRepository();
+            var tacheRepo = new Repositories.TacheRepository();
+            
+            int nbProjets = projetRepo.GetByMembre(_utilisateurCourant.Id).Count;
+            int nbTaches = tacheRepo.GetAllByAssignee(_utilisateurCourant.Id).Count;
+            
+            dashboard.SetStats(nbProjets, nbTaches);
+            _mainForm.ChargerVue(dashboard);
         }
 
         public void OuvrirGestionUtilisateurs()
@@ -29,7 +47,44 @@ namespace GestionProjet.Controllers
         {
             var projetForm = new ProjetForm();
             var projetController = new ProjetController(projetForm, _utilisateurCourant);
-            NaviguerVers(projetForm);
+            _mainForm.ChargerVue(projetForm);
+        }
+
+        public void OuvrirCreationProjet()
+        {
+            var projetForm = new ProjetForm();
+            var projetController = new ProjetController(projetForm, _utilisateurCourant);
+            _mainForm.ChargerVue(projetForm);
+            
+            string nom = Microsoft.VisualBasic.Interaction.InputBox("Nom du projet :", "Nouveau Projet", "");
+            if (!string.IsNullOrWhiteSpace(nom))
+            {
+                projetController.CreerProjet(nom, "");
+            }
+        }
+
+        public void OuvrirMesTaches()
+        {
+            // Ouvre le Kanban pour les tâches de l'utilisateur
+            // Pour l'instant on ouvre le Kanban du premier projet ou une vue globale
+            var projetRepo = new Repositories.ProjetRepository();
+            var projets = projetRepo.GetByMembre(_utilisateurCourant.Id);
+            
+            if (projets.Count > 0)
+            {
+                var kanbanForm = new KanbanForm();
+                var kanbanController = new KanbanController(kanbanForm, projets[0], _utilisateurCourant);
+                _mainForm.ChargerVue(kanbanForm);
+            }
+            else
+            {
+                MessageBox.Show("Vous n'avez aucun projet pour afficher des tâches.");
+            }
+        }
+
+        public void OuvrirToutesTaches()
+        {
+             OuvrirMesTaches(); // On peut affiner plus tard
         }
         public void Deconnexion()
         {
