@@ -28,6 +28,10 @@ namespace GestionProjet.Views
             _controller.OuvrirGestionUtilisateurs();
         }
 
+        private void menuProjets_Click(object sender, EventArgs e)
+        {
+            _controller.OuvrirGestionProjets();
+        }
         private void menuDeconnexion_Click(object sender, EventArgs e)
         {
             _controller.Deconnexion();

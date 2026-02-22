@@ -9,6 +9,7 @@
         private System.Windows.Forms.ToolStripMenuItem menuQuitter;
         private System.Windows.Forms.ToolStripMenuItem menuGestion;
         private System.Windows.Forms.ToolStripMenuItem menuUtilisateurs;
+        private System.Windows.Forms.ToolStripMenuItem menuProjets;
         private System.Windows.Forms.Label lblBienvenue;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel lblStatus;
@@ -30,6 +31,7 @@
             this.menuQuitter = new System.Windows.Forms.ToolStripMenuItem();
             this.menuGestion = new System.Windows.Forms.ToolStripMenuItem();
             this.menuUtilisateurs = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuProjets = new System.Windows.Forms.ToolStripMenuItem();
             this.lblBienvenue = new System.Windows.Forms.Label();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
@@ -43,8 +45,9 @@
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuFichier,
-            this.menuGestion});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuGestion,
+            this.menuProjets});
+           this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(1200, 35);
             this.menuStrip.TabIndex = 0;
@@ -77,7 +80,7 @@
             // 
             this.menuGestion.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuUtilisateurs});
-            this.menuGestion.Name = "menuGestion";
+           this.menuGestion.Name = "menuGestion";
             this.menuGestion.Size = new System.Drawing.Size(88, 29);
             this.menuGestion.Text = "Gestion";
             // 
@@ -87,6 +90,13 @@
             this.menuUtilisateurs.Size = new System.Drawing.Size(200, 34);
             this.menuUtilisateurs.Text = "Utilisateurs";
             this.menuUtilisateurs.Click += new System.EventHandler(this.menuUtilisateurs_Click);
+            // 
+            // menuProjets
+            // 
+            this.menuProjets.Name = "menuProjets";
+            this.menuProjets.Size = new System.Drawing.Size(82, 29);
+           this.menuProjets.Text = "Projets";
+            this.menuProjets.Click += new System.EventHandler(this.menuProjets_Click);
             // 
             // lblBienvenue
             // 

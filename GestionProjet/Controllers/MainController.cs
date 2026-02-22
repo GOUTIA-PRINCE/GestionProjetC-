@@ -25,6 +25,12 @@ namespace GestionProjet.Controllers
             utilisateurForm.Show();
         }
 
+        public void OuvrirGestionProjets()
+        {
+            var projetForm = new ProjetForm();
+            var projetController = new ProjetController(projetForm, _utilisateurCourant);
+            NaviguerVers(projetForm);
+        }
         public void Deconnexion()
         {
             if (ConfirmerAction("Voulez-vous vraiment vous déconnecter ?"))
