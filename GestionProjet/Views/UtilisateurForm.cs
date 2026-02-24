@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 using GestionProjet.Controllers;
 using GestionProjet.Models;
@@ -27,52 +28,16 @@ namespace GestionProjet.Views
         private void ConfigurationDataGridView()
         {
             dgvUtilisateurs.AutoGenerateColumns = false;
-
             dgvUtilisateurs.Columns.Clear();
+            
+            dgvUtilisateurs.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(63, 81, 181);
+            dgvUtilisateurs.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvUtilisateurs.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
 
-            // Colonne ID
-            dgvUtilisateurs.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                DataPropertyName = "Id",
-                HeaderText = "ID",
-                Width = 50
-            });
-
-            // Colonne Nom
-            dgvUtilisateurs.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                DataPropertyName = "Nom",
-                HeaderText = "Nom",
-                Width = 150
-            });
-
-            // Colonne Email
-            dgvUtilisateurs.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                DataPropertyName = "Email",
-                HeaderText = "Email",
-                Width = 200
-            });
-
-            // Colonne Date de création
-            dgvUtilisateurs.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                DataPropertyName = "DateCreation",
-                HeaderText = "Date création",
-                Width = 120,
-                DefaultCellStyle = new DataGridViewCellStyle
-                {
-                    Format = "dd/MM/yyyy HH:mm"
-                }
-            });
-
-            // Colonne Statut
-            dgvUtilisateurs.Columns.Add(new DataGridViewCheckBoxColumn
-            {
-                DataPropertyName = "EstActif",
-                HeaderText = "Actif",
-                Width = 50
-            });
+            dgvUtilisateurs.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Nom", HeaderText = "NOM", FillWeight = 30 });
+            dgvUtilisateurs.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Email", HeaderText = "EMAIL", FillWeight = 30 });
+            dgvUtilisateurs.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "DateCreation", HeaderText = "DATE", FillWeight = 25, DefaultCellStyle = new DataGridViewCellStyle { Format = "g" } });
+            dgvUtilisateurs.Columns.Add(new DataGridViewCheckBoxColumn { DataPropertyName = "EstActif", HeaderText = "ACTIF", FillWeight = 15 });
         }
 
         public void AfficherUtilisateurs(List<Utilisateur> utilisateurs)
@@ -199,12 +164,7 @@ namespace GestionProjet.Views
         {
             ViderChamps();
             dgvUtilisateurs.ClearSelection();
-        }
-
-        private void btnActualiser_Click(object sender, EventArgs e)
-        {
             _controller.ChargerUtilisateurs();
-            ViderChamps();
         }
     }
 }

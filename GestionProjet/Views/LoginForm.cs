@@ -1,5 +1,5 @@
-﻿
-using System;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 using GestionProjet.Controllers;
 
@@ -12,6 +12,30 @@ namespace GestionProjet.Views
         public LoginForm()
         {
             InitializeComponent();
+            SetupDragging();
+        }
+
+        private void SetupDragging()
+        {
+            Point lastLocation = Point.Empty;
+            bool isMouseDown = false;
+
+            pnlBranding.MouseDown += (s, e) => {
+                isMouseDown = true;
+                lastLocation = e.Location;
+            };
+
+            pnlBranding.MouseMove += (s, e) => {
+                if (isMouseDown)
+                {
+                    this.Location = new Point(
+                        (this.Location.X - lastLocation.X) + e.X,
+                        (this.Location.Y - lastLocation.Y) + e.Y);
+                    this.Update();
+                }
+            };
+
+            pnlBranding.MouseUp += (s, e) => isMouseDown = false;
         }
 
         public void SetController(LoginController controller)
@@ -21,7 +45,6 @@ namespace GestionProjet.Views
 
         private void btnConnexion_Click(object sender, EventArgs e)
         {
-            //trim() permet de supprimer les espaces inutile au debut et a la fin 
             _controller.Authentifier(txtEmail.Text.Trim(), txtMotDePasse.Text);
         }
 
@@ -30,7 +53,6 @@ namespace GestionProjet.Views
             _controller.QuitterApplication();
         }
 
-        // Gestion de l'événement Enter pour faciliter la saisie
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
             if (keyData == Keys.Enter)
@@ -39,11 +61,6 @@ namespace GestionProjet.Views
                 return true;
             }
             return base.ProcessCmdKey(ref msg, keyData);
-        }
-
-        private void lnkMotDePasseOublie_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            _controller.AfficherPageMotDePasseOublie();
         }
 
         private void lnkCreerCompte_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

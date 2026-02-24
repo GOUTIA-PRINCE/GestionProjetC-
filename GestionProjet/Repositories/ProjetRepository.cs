@@ -21,7 +21,10 @@ namespace GestionProjet.Repositories
             using (var conn = _context.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT p.*, u.nom as createur_nom FROM Projets p LEFT JOIN utilisateurs u ON p.createur_id = u.id ORDER BY p.date_creation DESC";
+                string query = "SELECT p.*, u.nom as createur_nom, " +
+                               "(SELECT IFNULL(ROUND(SUM(CASE WHEN s.libelle = 'Terminé' THEN 1 ELSE 0 END) * 100.0 / COUNT(*)), 0) " +
+                               " FROM Taches t JOIN Statuts s ON t.statut_id = s.id WHERE t.projet_id = p.id) as progression " +
+                               "FROM Projets p LEFT JOIN utilisateurs u ON p.createur_id = u.id ORDER BY p.date_creation DESC";
                 using (var cmd = new MySqlCommand(query, conn))
                 using (var reader = cmd.ExecuteReader())
                 {
@@ -40,7 +43,10 @@ namespace GestionProjet.Repositories
             using (var conn = _context.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT p.*, u.nom as createur_nom FROM Projets p " +
+                string query = "SELECT p.*, u.nom as createur_nom, " +
+                               "(SELECT IFNULL(ROUND(SUM(CASE WHEN s.libelle = 'Terminé' THEN 1 ELSE 0 END) * 100.0 / COUNT(*)), 0) " +
+                               " FROM Taches t JOIN Statuts s ON t.statut_id = s.id WHERE t.projet_id = p.id) as progression " +
+                               "FROM Projets p " +
                                "JOIN Membres_Projet mp ON p.id = mp.projet_id " +
                                "LEFT JOIN utilisateurs u ON p.createur_id = u.id " +
                                "WHERE mp.utilisateur_id = @userId";
@@ -64,7 +70,10 @@ namespace GestionProjet.Repositories
             using (var conn = _context.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT p.*, u.nom as createur_nom FROM Projets p LEFT JOIN utilisateurs u ON p.createur_id = u.id WHERE p.id = @id";
+                string query = "SELECT p.*, u.nom as createur_nom, " +
+                               "(SELECT IFNULL(ROUND(SUM(CASE WHEN s.libelle = 'Terminé' THEN 1 ELSE 0 END) * 100.0 / COUNT(*)), 0) " +
+                               " FROM Taches t JOIN Statuts s ON t.statut_id = s.id WHERE t.projet_id = p.id) as progression " +
+                               "FROM Projets p LEFT JOIN utilisateurs u ON p.createur_id = u.id WHERE p.id = @id";
                 using (var cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@id", id);
@@ -164,6 +173,35 @@ namespace GestionProjet.Repositories
             }
         }
 
+        public List<Utilisateur> GetMembres(int projetId)
+        {
+            var membres = new List<Utilisateur>();
+            using (var conn = _context.GetConnection())
+            {
+                conn.Open();
+                string query = "SELECT u.* FROM utilisateurs u " +
+                               "JOIN Membres_Projet mp ON u.id = mp.utilisateur_id " +
+                               "WHERE mp.projet_id = @pId";
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@pId", projetId);
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            membres.Add(new Utilisateur
+                            {
+                                Id = reader.GetInt32("id"),
+                                Nom = reader.GetString("nom"),
+                                Email = reader.GetString("email")
+                            });
+                        }
+                    }
+                }
+            }
+            return membres;
+        }
+
         private Projet MapReaderToProjet(MySqlDataReader reader)
         {
             return new Projet
@@ -173,6 +211,7 @@ namespace GestionProjet.Repositories
                 Description = reader.IsDBNull(reader.GetOrdinal("description")) ? "" : reader.GetString("description"),
                 DateCreation = reader.GetDateTime("date_creation"),
                 DateFinPrevue = reader.IsDBNull(reader.GetOrdinal("date_fin_prevue")) ? (DateTime?)null : reader.GetDateTime("date_fin_prevue"),
+                Progression = Convert.ToInt32(reader["progression"]),
                 CreateurId = reader.IsDBNull(reader.GetOrdinal("createur_id")) ? (int?)null : reader.GetInt32("createur_id"),
                 Createur = reader.IsDBNull(reader.GetOrdinal("createur_id")) ? null : new Utilisateur { Id = reader.GetInt32("createur_id"), Nom = reader.GetString("createur_nom") }
             };

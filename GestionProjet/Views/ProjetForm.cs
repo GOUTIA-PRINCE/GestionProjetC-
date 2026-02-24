@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 using GestionProjet.Controllers;
 using GestionProjet.Models;
@@ -27,17 +28,60 @@ namespace GestionProjet.Views
             dgvProjets.AutoGenerateColumns = false;
             dgvProjets.Columns.Clear();
 
-            dgvProjets.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Nom", HeaderText = "Nom du Projet", Width = 200 });
-            dgvProjets.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Description", HeaderText = "Description", Width = 300 });
-            dgvProjets.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "DateFinPrevue", HeaderText = "Échéance", Width = 100 });
+            // Style headers
+            dgvProjets.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(63, 81, 181);
+            dgvProjets.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvProjets.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+
+            dgvProjets.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Nom", HeaderText = "PROJET", FillWeight = 30 });
+            dgvProjets.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Description", HeaderText = "DESCRIPTION", FillWeight = 40 });
+            
+            // Colonne Progression (Custom Painted)
+            var colProg = new DataGridViewTextBoxColumn { DataPropertyName = "Progression", HeaderText = "AVANCEMENT", FillWeight = 20 };
+            dgvProjets.Columns.Add(colProg);
 
             // Bouton pour ouvrir le Kanban
             DataGridViewButtonColumn btnKanban = new DataGridViewButtonColumn();
-            btnKanban.HeaderText = "Action";
-            btnKanban.Text = "Ouvrir Kanban";
+            btnKanban.HeaderText = "DÉTAILS";
+            btnKanban.Text = "Ouvrir";
             btnKanban.UseColumnTextForButtonValue = true;
-            btnKanban.Width = 100;
+            btnKanban.FillWeight = 10;
+            btnKanban.FlatStyle = FlatStyle.Flat;
             dgvProjets.Columns.Add(btnKanban);
+
+            // Custom painting for the progress bar
+            dgvProjets.CellPainting += (s, e) => {
+                if (e.RowIndex >= 0 && e.ColumnIndex == 2) // Index de la colonne Progression
+                {
+                    e.Paint(e.CellBounds, DataGridViewPaintParts.All & ~DataGridViewPaintParts.ContentForeground);
+                    
+                    int progress = (int)e.Value;
+                    int padding = 10;
+                    int barWidth = e.CellBounds.Width - (padding * 2);
+                    int barHeight = 15;
+                    int barX = e.CellBounds.X + padding;
+                    int barY = e.CellBounds.Y + (e.CellBounds.Height - barHeight) / 2;
+
+                    // Background
+                    e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(230, 230, 230)), barX, barY, barWidth, barHeight);
+                    
+                    // Progress
+                    int progressWidth = (int)(barWidth * (progress / 100.0));
+                    Color barColor = progress == 100 ? Color.FromArgb(40, 167, 69) : Color.FromArgb(63, 81, 181);
+                    if (progress > 0)
+                    {
+                        e.Graphics.FillRectangle(new SolidBrush(barColor), barX, barY, progressWidth, barHeight);
+                    }
+
+                    // Text percentage
+                    string text = $"{progress}%";
+                    Font font = new Font("Segoe UI", 8, FontStyle.Bold);
+                    Size textSize = TextRenderer.MeasureText(text, font);
+                    e.Graphics.DrawString(text, font, Brushes.Black, barX + (barWidth - textSize.Width) / 2, barY - 15);
+
+                    e.Handled = true;
+                }
+            };
         }
 
         public void AfficherProjets(List<Projet> projets)
@@ -49,12 +93,7 @@ namespace GestionProjet.Views
 
         private void btnNouveauProjet_Click(object sender, EventArgs e)
         {
-            // Afficher une boîte de dialogue simple ou un panel pour créer un projet
-            string nom = Microsoft.VisualBasic.Interaction.InputBox("Nom du projet :", "Nouveau Projet", "");
-            if (!string.IsNullOrWhiteSpace(nom))
-            {
-                _controller.CreerProjet(nom, "");
-            }
+            _controller.AjouterProjet();
         }
 
         private void dgvProjets_CellContentClick(object sender, DataGridViewCellEventArgs e)

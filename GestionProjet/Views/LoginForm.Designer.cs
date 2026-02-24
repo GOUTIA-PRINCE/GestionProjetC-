@@ -1,5 +1,4 @@
-﻿
-namespace GestionProjet.Views
+﻿namespace GestionProjet.Views
 {
     partial class LoginForm
     {
@@ -11,8 +10,9 @@ namespace GestionProjet.Views
         private System.Windows.Forms.Button btnConnexion;
         private System.Windows.Forms.Button btnQuitter;
         private System.Windows.Forms.Label lblTitre;
-        private System.Windows.Forms.LinkLabel lnkMotDePasseOublie;
         private System.Windows.Forms.LinkLabel lnkCreerCompte;
+        private System.Windows.Forms.Panel pnlBranding;
+        private System.Windows.Forms.Label lblAppSubtitle;
 
         protected override void Dispose(bool disposing)
         {
@@ -32,128 +32,150 @@ namespace GestionProjet.Views
             this.btnConnexion = new System.Windows.Forms.Button();
             this.btnQuitter = new System.Windows.Forms.Button();
             this.lblTitre = new System.Windows.Forms.Label();
-            this.lnkMotDePasseOublie = new System.Windows.Forms.LinkLabel();
             this.lnkCreerCompte = new System.Windows.Forms.LinkLabel();
+            this.pnlBranding = new System.Windows.Forms.Panel();
+            this.lblAppSubtitle = new System.Windows.Forms.Label();
+            this.pnlBranding.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtEmail
+            // pnlBranding
             // 
-            this.txtEmail.Location = new System.Drawing.Point(180, 118);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(298, 26);
-            this.txtEmail.TabIndex = 2;
-            // 
-            // txtMotDePasse
-            // 
-            this.txtMotDePasse.Location = new System.Drawing.Point(180, 180);
-            this.txtMotDePasse.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtMotDePasse.Name = "txtMotDePasse";
-            this.txtMotDePasse.Size = new System.Drawing.Size(298, 26);
-            this.txtMotDePasse.TabIndex = 4;
-            this.txtMotDePasse.UseSystemPasswordChar = true;
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(75, 123);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(52, 20);
-            this.lblEmail.TabIndex = 1;
-            this.lblEmail.Text = "Email:";
-            // 
-            // lblMotDePasse
-            // 
-            this.lblMotDePasse.AutoSize = true;
-            this.lblMotDePasse.Location = new System.Drawing.Point(75, 185);
-            this.lblMotDePasse.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblMotDePasse.Name = "lblMotDePasse";
-            this.lblMotDePasse.Size = new System.Drawing.Size(109, 20);
-            this.lblMotDePasse.TabIndex = 3;
-            this.lblMotDePasse.Text = "Mot de passe:";
-            // 
-            // btnConnexion
-            // 
-            this.btnConnexion.Location = new System.Drawing.Point(180, 246);
-            this.btnConnexion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnConnexion.Name = "btnConnexion";
-            this.btnConnexion.Size = new System.Drawing.Size(142, 46);
-            this.btnConnexion.TabIndex = 5;
-            this.btnConnexion.Text = "Connexion";
-            this.btnConnexion.UseVisualStyleBackColor = true;
-            this.btnConnexion.Click += new System.EventHandler(this.btnConnexion_Click);
-            // 
-            // btnQuitter
-            // 
-            this.btnQuitter.Location = new System.Drawing.Point(338, 246);
-            this.btnQuitter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnQuitter.Name = "btnQuitter";
-            this.btnQuitter.Size = new System.Drawing.Size(142, 46);
-            this.btnQuitter.TabIndex = 6;
-            this.btnQuitter.Text = "Quitter";
-            this.btnQuitter.UseVisualStyleBackColor = true;
-            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
+            this.pnlBranding.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            this.pnlBranding.Controls.Add(this.lblTitre);
+            this.pnlBranding.Controls.Add(this.lblAppSubtitle);
+            this.pnlBranding.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlBranding.Location = new System.Drawing.Point(0, 0);
+            this.pnlBranding.Name = "pnlBranding";
+            this.pnlBranding.Size = new System.Drawing.Size(450, 150);
+            this.pnlBranding.TabIndex = 0;
             // 
             // lblTitre
             // 
-            this.lblTitre.AutoSize = true;
-            this.lblTitre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.lblTitre.Location = new System.Drawing.Point(180, 46);
-            this.lblTitre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitre.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold);
+            this.lblTitre.ForeColor = System.Drawing.Color.White;
+            this.lblTitre.Location = new System.Drawing.Point(0, 40);
             this.lblTitre.Name = "lblTitre";
-            this.lblTitre.Size = new System.Drawing.Size(201, 32);
+            this.lblTitre.Size = new System.Drawing.Size(450, 50);
             this.lblTitre.TabIndex = 0;
             this.lblTitre.Text = "GestionProjet";
             this.lblTitre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lnkMotDePasseOublie
+            // lblAppSubtitle
             // 
-            this.lnkMotDePasseOublie.AutoSize = true;
-            this.lnkMotDePasseOublie.Location = new System.Drawing.Point(179, 316);
-            this.lnkMotDePasseOublie.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lnkMotDePasseOublie.Name = "lnkMotDePasseOublie";
-            this.lnkMotDePasseOublie.Size = new System.Drawing.Size(164, 20);
-            this.lnkMotDePasseOublie.TabIndex = 7;
-            this.lnkMotDePasseOublie.TabStop = true;
-            this.lnkMotDePasseOublie.Text = "Mot de passe oublié ?";
-            this.lnkMotDePasseOublie.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkMotDePasseOublie_LinkClicked);
+            this.lblAppSubtitle.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblAppSubtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(202)))), ((int)(((byte)(233)))));
+            this.lblAppSubtitle.Location = new System.Drawing.Point(0, 90);
+            this.lblAppSubtitle.Name = "lblAppSubtitle";
+            this.lblAppSubtitle.Size = new System.Drawing.Size(450, 25);
+            this.lblAppSubtitle.TabIndex = 1;
+            this.lblAppSubtitle.Text = "Version 2.0 - MVC Architecture";
+            this.lblAppSubtitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblEmail.Location = new System.Drawing.Point(50, 180);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(59, 25);
+            this.lblEmail.TabIndex = 1;
+            this.lblEmail.Text = "Email";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txtEmail.Location = new System.Drawing.Point(50, 210);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(350, 37);
+            this.txtEmail.TabIndex = 2;
+            // 
+            // lblMotDePasse
+            // 
+            this.lblMotDePasse.AutoSize = true;
+            this.lblMotDePasse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblMotDePasse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblMotDePasse.Location = new System.Drawing.Point(50, 260);
+            this.lblMotDePasse.Name = "lblMotDePasse";
+            this.lblMotDePasse.Size = new System.Drawing.Size(126, 25);
+            this.lblMotDePasse.TabIndex = 3;
+            this.lblMotDePasse.Text = "Mot de passe";
+            // 
+            // txtMotDePasse
+            // 
+            this.txtMotDePasse.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txtMotDePasse.Location = new System.Drawing.Point(50, 290);
+            this.txtMotDePasse.Name = "txtMotDePasse";
+            this.txtMotDePasse.Size = new System.Drawing.Size(350, 37);
+            this.txtMotDePasse.TabIndex = 4;
+            this.txtMotDePasse.UseSystemPasswordChar = true;
+            // 
+            // btnConnexion
+            // 
+            this.btnConnexion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            this.btnConnexion.FlatAppearance.BorderSize = 0;
+            this.btnConnexion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConnexion.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnConnexion.ForeColor = System.Drawing.Color.White;
+            this.btnConnexion.Location = new System.Drawing.Point(50, 360);
+            this.btnConnexion.Name = "btnConnexion";
+            this.btnConnexion.Size = new System.Drawing.Size(350, 45);
+            this.btnConnexion.TabIndex = 5;
+            this.btnConnexion.Text = "SE CONNECTER";
+            this.btnConnexion.UseVisualStyleBackColor = false;
+            this.btnConnexion.Click += new System.EventHandler(this.btnConnexion_Click);
+            // 
+            // btnQuitter
+            // 
+            this.btnQuitter.FlatAppearance.BorderSize = 0;
+            this.btnQuitter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuitter.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnQuitter.ForeColor = System.Drawing.Color.Gray;
+            this.btnQuitter.Location = new System.Drawing.Point(50, 460);
+            this.btnQuitter.Name = "btnQuitter";
+            this.btnQuitter.Size = new System.Drawing.Size(350, 30);
+            this.btnQuitter.TabIndex = 7;
+            this.btnQuitter.Text = "Quitter l'application";
+            this.btnQuitter.UseVisualStyleBackColor = true;
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
             // 
             // lnkCreerCompte
             // 
-            this.lnkCreerCompte.AutoSize = true;
-            this.lnkCreerCompte.Location = new System.Drawing.Point(351, 316);
-            this.lnkCreerCompte.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lnkCreerCompte.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            this.lnkCreerCompte.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lnkCreerCompte.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lnkCreerCompte.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            this.lnkCreerCompte.Location = new System.Drawing.Point(50, 420);
             this.lnkCreerCompte.Name = "lnkCreerCompte";
-            this.lnkCreerCompte.Size = new System.Drawing.Size(127, 20);
-            this.lnkCreerCompte.TabIndex = 8;
+            this.lnkCreerCompte.Size = new System.Drawing.Size(350, 25);
+            this.lnkCreerCompte.TabIndex = 6;
             this.lnkCreerCompte.TabStop = true;
-            this.lnkCreerCompte.Text = "Créer un compte";
+            this.lnkCreerCompte.Text = "Pas encore de compte ? S\'inscrire";
+            this.lnkCreerCompte.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lnkCreerCompte.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkCreerCompte_LinkClicked);
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(576, 369);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(450, 520);
             this.Controls.Add(this.lnkCreerCompte);
-            this.Controls.Add(this.lnkMotDePasseOublie);
             this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.btnConnexion);
             this.Controls.Add(this.txtMotDePasse);
             this.Controls.Add(this.lblMotDePasse);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.lblTitre);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MaximizeBox = false;
+            this.Controls.Add(this.pnlBranding);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Connexion - GestionProjet";
+            this.Text = "Connexion";
+            this.pnlBranding.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
     }
 }

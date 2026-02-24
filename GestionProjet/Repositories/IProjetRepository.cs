@@ -13,5 +13,6 @@ namespace GestionProjet.Repositories
         void Delete(int id);
         void AjouterMembre(int projetId, int utilisateurId, string role);
         void RetirerMembre(int projetId, int utilisateurId);
+        List<Utilisateur> GetMembres(int projetId);
     }
 }

@@ -29,7 +29,6 @@ namespace GestionProjet.Views
             pnlKanban.Controls.Clear();
             pnlKanban.ColumnCount = statuts.Count;
             
-            // Configuration des colonnes dynamiquement
             float percent = 100f / statuts.Count;
             pnlKanban.ColumnStyles.Clear();
 
@@ -50,9 +49,26 @@ namespace GestionProjet.Views
                 FlowDirection = FlowDirection.TopDown,
                 WrapContents = false,
                 AutoScroll = true,
-                BackColor = Color.FromArgb(240, 240, 240),
-                Tag = statut.Id,
-                Padding = new Padding(5)
+                BackColor = Color.FromArgb(240, 242, 245),
+                Tag = statut, // Stocker l'objet statut complet
+                Padding = new Padding(10),
+                AllowDrop = true
+            };
+
+            // Event handlers for Drop
+            panel.DragEnter += (s, e) => {
+                if (e.Data.GetDataPresent(typeof(Tache)))
+                    e.Effect = DragDropEffects.Move;
+            };
+
+            panel.DragDrop += (s, e) => {
+                var tache = (Tache)e.Data.GetData(typeof(Tache));
+                var targetStatut = (Statut)((FlowLayoutPanel)s).Tag;
+                
+                if (tache.StatutId != targetStatut.Id)
+                {
+                    _controller.ChangerStatutTache(tache, targetStatut.Id);
+                }
             };
 
             var header = new Label
@@ -60,9 +76,11 @@ namespace GestionProjet.Views
                 Text = statut.Libelle.ToUpper(),
                 Font = new Font("Segoe UI", 10, FontStyle.Bold),
                 Width = 200,
-                Padding = new Padding(5),
-                BackColor = Color.LightGray,
-                TextAlign = ContentAlignment.MiddleCenter
+                Padding = new Padding(10),
+                BackColor = Color.White,
+                ForeColor = Color.FromArgb(63, 81, 181),
+                TextAlign = ContentAlignment.MiddleLeft,
+                Height = 40
             };
 
             var container = new Panel { Dock = DockStyle.Fill, Padding = new Padding(5) };
@@ -76,7 +94,6 @@ namespace GestionProjet.Views
 
         public void AfficherTaches(List<Tache> taches)
         {
-            // Vider les listes existantes (les FlowLayoutPanels sont dans les containers)
             foreach (Control container in pnlKanban.Controls)
             {
                 var flow = (FlowLayoutPanel)container.Controls[0];
@@ -86,11 +103,10 @@ namespace GestionProjet.Views
             foreach (var tache in taches)
             {
                 var card = CreateTaskCard(tache);
-                // Trouver le bon flow panel par l'ID du statut
                 foreach (Control container in pnlKanban.Controls)
                 {
                     var flow = (FlowLayoutPanel)container.Controls[0];
-                    if ((int)flow.Tag == tache.StatutId)
+                    if (((Statut)flow.Tag).Id == tache.StatutId)
                     {
                         flow.Controls.Add(card);
                         break;
@@ -103,19 +119,23 @@ namespace GestionProjet.Views
         {
             var card = new Panel
             {
-                Width = 180,
-                Height = 100,
+                Width = 220,
+                Height = 110,
                 BackColor = Color.White,
-                BorderStyle = BorderStyle.FixedSingle,
-                Margin = new Padding(0, 0, 0, 10),
+                Margin = new Padding(0, 0, 0, 15),
+                Padding = new Padding(10),
                 Cursor = Cursors.Hand
             };
 
-            // Barre de priorité
+            // Custom border drawing for rounded effect or just flat
+            card.Paint += (s, e) => {
+                ControlPaint.DrawBorder(e.Graphics, card.ClientRectangle, Color.LightGray, ButtonBorderStyle.Solid);
+            };
+
             var colorBar = new Panel
             {
-                Height = 4,
-                Dock = DockStyle.Top,
+                Width = 5,
+                Dock = DockStyle.Left,
                 BackColor = string.IsNullOrEmpty(tache.Priorite?.CouleurHex) 
                             ? Color.Gray 
                             : ColorTranslator.FromHtml(tache.Priorite.CouleurHex)
@@ -126,8 +146,9 @@ namespace GestionProjet.Views
             {
                 Text = tache.Titre,
                 Font = new Font("Segoe UI", 9, FontStyle.Bold),
-                Location = new Point(5, 10),
-                Width = 170,
+                Location = new Point(15, 10),
+                Width = 190,
+                Height = 40,
                 AutoEllipsis = true
             };
             card.Controls.Add(lblTitre);
@@ -135,14 +156,20 @@ namespace GestionProjet.Views
             var lblUser = new Label
             {
                 Text = tache.Assignee?.Nom ?? "Non assigné",
-                Font = new Font("Segoe UI", 8, FontStyle.Italic),
-                Location = new Point(5, 75),
-                Width = 170,
+                Font = new Font("Segoe UI", 8),
+                Location = new Point(15, 80),
+                Width = 130,
                 ForeColor = Color.DimGray
             };
             card.Controls.Add(lblUser);
 
-            card.Click += (s, e) => _controller.ModifierTache(tache);
+            // Drag support
+            card.MouseDown += (s, e) => {
+                if (e.Button == MouseButtons.Left)
+                    card.DoDragDrop(tache, DragDropEffects.Move);
+            };
+
+            card.DoubleClick += (s, e) => _controller.ModifierTache(tache);
 
             return card;
         }

@@ -1,5 +1,5 @@
-
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 using GestionProjet.Controllers;
 
@@ -12,6 +12,30 @@ namespace GestionProjet.Views
         public RegisterForm()
         {
             InitializeComponent();
+            SetupDragging();
+        }
+
+        private void SetupDragging()
+        {
+            Point lastLocation = Point.Empty;
+            bool isMouseDown = false;
+
+            pnlHeader.MouseDown += (s, e) => {
+                isMouseDown = true;
+                lastLocation = e.Location;
+            };
+
+            pnlHeader.MouseMove += (s, e) => {
+                if (isMouseDown)
+                {
+                    this.Location = new Point(
+                        (this.Location.X - lastLocation.X) + e.X,
+                        (this.Location.Y - lastLocation.Y) + e.Y);
+                    this.Update();
+                }
+            };
+
+            pnlHeader.MouseUp += (s, e) => isMouseDown = false;
         }
 
         public void SetController(RegisterController controller)

@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|d:\\etudes\\licence\\semestre 1\\c#\\projet\\gestionprojet\\gestionprojet\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|d:\\etudes\\licence\\semestre 1\\c#\\projet\\gestionprojet\\gestionprojet\\views\\projetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\projetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\projetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -53,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\utilisateurform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\utilisateurform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -122,11 +122,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\LoginForm.cs",
+              "RelativeDocumentMoniker": "GestionProjet\\Views\\LoginForm.cs",
+              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\LoginForm.cs",
+              "RelativeToolTip": "GestionProjet\\Views\\LoginForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T14:40:25.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterController.cs",
+              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\RegisterController.cs",
+              "RelativeDocumentMoniker": "GestionProjet\\Controllers\\RegisterController.cs",
+              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\RegisterController.cs",
+              "RelativeToolTip": "GestionProjet\\Controllers\\RegisterController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T14:21:15.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.cs",
+              "RelativeDocumentMoniker": "GestionProjet\\Views\\MainForm.cs",
+              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.cs",
+              "RelativeToolTip": "GestionProjet\\Views\\MainForm.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA9wBUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T14:45:43.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "KanbanForm.cs",
               "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\KanbanForm.cs",
               "RelativeDocumentMoniker": "GestionProjet\\Views\\KanbanForm.cs",
@@ -139,18 +177,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "RegisterController.cs",
-              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\RegisterController.cs",
-              "RelativeDocumentMoniker": "GestionProjet\\Controllers\\RegisterController.cs",
-              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\RegisterController.cs",
-              "RelativeToolTip": "GestionProjet\\Controllers\\RegisterController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T14:21:15.11Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "DatabaseContext.cs",
               "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Data\\DatabaseContext.cs",
               "RelativeDocumentMoniker": "GestionProjet\\Data\\DatabaseContext.cs",
@@ -162,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.cs",
               "RelativeDocumentMoniker": "GestionProjet\\Views\\MainForm.cs",
@@ -174,32 +200,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.cs",
-              "RelativeDocumentMoniker": "GestionProjet\\Views\\MainForm.cs",
-              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.cs",
-              "RelativeToolTip": "GestionProjet\\Views\\MainForm.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAmwB8AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:45:43.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ProjetForm.cs [Design]",
               "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\ProjetForm.cs",
               "RelativeDocumentMoniker": "GestionProjet\\Views\\ProjetForm.cs",
               "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\ProjetForm.cs [Design]",
               "RelativeToolTip": "GestionProjet\\Views\\ProjetForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T15:32:24.513Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-02-22T15:32:24.513Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "KanbanController.cs",
               "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Controllers\\KanbanController.cs",
               "RelativeDocumentMoniker": "GestionProjet\\Controllers\\KanbanController.cs",
@@ -211,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "KanbanForm.cs [Design]",
               "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\KanbanForm.cs",
               "RelativeDocumentMoniker": "GestionProjet\\Views\\KanbanForm.cs",
@@ -222,18 +234,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\LoginForm.cs",
               "RelativeDocumentMoniker": "GestionProjet\\Views\\LoginForm.cs",
               "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\LoginForm.cs [Design]",
               "RelativeToolTip": "GestionProjet\\Views\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:22:15.098Z"
+              "WhenOpened": "2026-02-20T14:22:15.098Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AuthService.cs",
               "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "GestionProjet\\Services\\AuthService.cs",
@@ -245,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "UtilisateurRepository.cs",
               "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Repositories\\UtilisateurRepository.cs",
               "RelativeDocumentMoniker": "GestionProjet\\Repositories\\UtilisateurRepository.cs",
@@ -257,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "RegisterForm.cs [Design]",
               "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\RegisterForm.cs",
               "RelativeDocumentMoniker": "GestionProjet\\Views\\RegisterForm.cs",
@@ -269,18 +282,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\LoginForm.cs",
-              "RelativeDocumentMoniker": "GestionProjet\\Views\\LoginForm.cs",
-              "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\LoginForm.cs",
-              "RelativeToolTip": "GestionProjet\\Views\\LoginForm.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAkwAsAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:40:25.081Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "UtilisateurForm.cs [Design]",
               "DocumentMoniker": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\UtilisateurForm.cs",
               "RelativeDocumentMoniker": "GestionProjet\\Views\\UtilisateurForm.cs",
@@ -299,8 +300,7 @@
               "RelativeToolTip": "GestionProjet\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-02-20T13:09:23.511Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T13:09:23.511Z"
             },
             {
               "$type": "Document",
@@ -312,8 +312,7 @@
               "RelativeToolTip": "GestionProjet\\Views\\MainForm.Designer.cs",
               "ViewState": "AgIAAFgAAAAAAAAAAAAswIAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:45:23.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T14:45:23.624Z"
             },
             {
               "$type": "Document",
@@ -324,8 +323,7 @@
               "ToolTip": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\GestionProjet\\Views\\MainForm.resx",
               "RelativeToolTip": "GestionProjet\\Views\\MainForm.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2026-02-22T13:39:15.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-22T13:39:15.34Z"
             },
             {
               "$type": "Document",
@@ -337,7 +335,8 @@
               "RelativeToolTip": "GestionProjet\\Views\\LoginForm.Designer.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwD8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T14:15:44.296Z"
+              "WhenOpened": "2026-02-20T14:15:44.296Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

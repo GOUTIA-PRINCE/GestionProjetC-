@@ -166,6 +166,21 @@
     <Compile Include="Views\DashboardForm.Designer.cs">
       <DependentUpon>DashboardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\TacheForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TacheForm.Designer.cs">
+      <DependentUpon>TacheForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjetEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProjetEditForm.Designer.cs">
+      <DependentUpon>ProjetEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Theme.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

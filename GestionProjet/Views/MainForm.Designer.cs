@@ -3,23 +3,20 @@
     partial class MainForm
     {
         private System.ComponentModel.IContainer components = null;
-        private System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem menuFichier;
-        private System.Windows.Forms.ToolStripMenuItem menuDashboard;
-        private System.Windows.Forms.ToolStripMenuItem menuDeconnexion;
-        private System.Windows.Forms.ToolStripMenuItem menuQuitter;
-        private System.Windows.Forms.ToolStripMenuItem menuGestion;
-        private System.Windows.Forms.ToolStripMenuItem menuUtilisateurs;
-        private System.Windows.Forms.ToolStripMenuItem menuProjet;
-        private System.Windows.Forms.ToolStripMenuItem menuCreerProjet;
-        private System.Windows.Forms.ToolStripMenuItem menuTache;
-        private System.Windows.Forms.ToolStripMenuItem menuMesTaches;
-        private System.Windows.Forms.ToolStripMenuItem menuToutesTaches;
-        private System.Windows.Forms.Label lblBienvenue;
-        private System.Windows.Forms.StatusStrip statusStrip;
-        private System.Windows.Forms.ToolStripStatusLabel lblStatus;
+        private System.Windows.Forms.Panel pnlSidebar;
         private System.Windows.Forms.Panel pnlHeader;
         private System.Windows.Forms.Panel pnlMainContent;
+        private System.Windows.Forms.Label lblLogo;
+        private System.Windows.Forms.Button btnDashboard;
+        private System.Windows.Forms.Button btnProjets;
+        private System.Windows.Forms.Button btnTaches;
+        private System.Windows.Forms.Button btnUtilisateurs;
+        private System.Windows.Forms.Button btnDeconnexion;
+        private System.Windows.Forms.Label lblBienvenue;
+        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Panel pnlUser;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnMinimize;
 
         protected override void Dispose(bool disposing)
         {
@@ -32,197 +29,232 @@
 
         private void InitializeComponent()
         {
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.menuFichier = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuDashboard = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuDeconnexion = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuQuitter = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuGestion = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuUtilisateurs = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuProjet = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuCreerProjet = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuTache = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuMesTaches = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuToutesTaches = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.lblBienvenue = new System.Windows.Forms.Label();
+            this.pnlSidebar = new System.Windows.Forms.Panel();
+            this.btnDeconnexion = new System.Windows.Forms.Button();
+            this.btnUtilisateurs = new System.Windows.Forms.Button();
+            this.btnTaches = new System.Windows.Forms.Button();
+            this.btnProjets = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.lblLogo = new System.Windows.Forms.Label();
             this.pnlHeader = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.pnlUser = new System.Windows.Forms.Panel();
+            this.lblBienvenue = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.pnlMainContent = new System.Windows.Forms.Panel();
-            this.menuStrip.SuspendLayout();
-            this.statusStrip.SuspendLayout();
+            this.pnlSidebar.SuspendLayout();
             this.pnlHeader.SuspendLayout();
+            this.pnlUser.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip
+            // pnlSidebar
             // 
-            this.menuStrip.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuFichier,
-            this.menuDashboard,
-            this.menuGestion,
-            this.menuProjet,
-            this.menuTache});
-           this.menuStrip.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(1200, 35);
-            this.menuStrip.TabIndex = 0;
-            this.menuStrip.Text = "menuStrip";
+            this.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            this.pnlSidebar.Controls.Add(this.btnDeconnexion);
+            this.pnlSidebar.Controls.Add(this.btnUtilisateurs);
+            this.pnlSidebar.Controls.Add(this.btnTaches);
+            this.pnlSidebar.Controls.Add(this.btnProjets);
+            this.pnlSidebar.Controls.Add(this.btnDashboard);
+            this.pnlSidebar.Controls.Add(this.lblLogo);
+            this.pnlSidebar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlSidebar.Location = new System.Drawing.Point(0, 0);
+            this.pnlSidebar.Name = "pnlSidebar";
+            this.pnlSidebar.Size = new System.Drawing.Size(250, 720);
+            this.pnlSidebar.TabIndex = 0;
             // 
-            // menuFichier
+            // btnDeconnexion
             // 
-            this.menuFichier.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuDeconnexion,
-            this.menuQuitter});
-            this.menuFichier.Name = "menuFichier";
-            this.menuFichier.Size = new System.Drawing.Size(78, 29);
-            this.menuFichier.Text = "Fichier";
+            this.btnDeconnexion.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnDeconnexion.FlatAppearance.BorderSize = 0;
+            this.btnDeconnexion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeconnexion.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnDeconnexion.ForeColor = System.Drawing.Color.White;
+            this.btnDeconnexion.Location = new System.Drawing.Point(0, 670);
+            this.btnDeconnexion.Name = "btnDeconnexion";
+            this.btnDeconnexion.Size = new System.Drawing.Size(250, 50);
+            this.btnDeconnexion.TabIndex = 5;
+            this.btnDeconnexion.Text = "  Déconnexion";
+            this.btnDeconnexion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDeconnexion.UseVisualStyleBackColor = true;
+            this.btnDeconnexion.Click += new System.EventHandler(this.menuDeconnexion_Click);
             // 
-            // menuDashboard
+            // btnUtilisateurs
             // 
-            this.menuDashboard.Name = "menuDashboard";
-            this.menuDashboard.Size = new System.Drawing.Size(160, 29);
-            this.menuDashboard.Text = "Tableau de Bord";
-            this.menuDashboard.Click += new System.EventHandler(this.menuDashboard_Click);
+            this.btnUtilisateurs.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUtilisateurs.FlatAppearance.BorderSize = 0;
+            this.btnUtilisateurs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUtilisateurs.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnUtilisateurs.ForeColor = System.Drawing.Color.White;
+            this.btnUtilisateurs.Location = new System.Drawing.Point(0, 230);
+            this.btnUtilisateurs.Name = "btnUtilisateurs";
+            this.btnUtilisateurs.Size = new System.Drawing.Size(250, 50);
+            this.btnUtilisateurs.TabIndex = 4;
+            this.btnUtilisateurs.Text = "  Utilisateurs";
+            this.btnUtilisateurs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUtilisateurs.UseVisualStyleBackColor = true;
+            this.btnUtilisateurs.Click += new System.EventHandler(this.menuUtilisateurs_Click);
             // 
-            // menuDeconnexion
+            // btnTaches
             // 
-            this.menuDeconnexion.Name = "menuDeconnexion";
-            this.menuDeconnexion.Size = new System.Drawing.Size(217, 34);
-            this.menuDeconnexion.Text = "Déconnexion";
-            this.menuDeconnexion.Click += new System.EventHandler(this.menuDeconnexion_Click);
+            this.btnTaches.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTaches.FlatAppearance.BorderSize = 0;
+            this.btnTaches.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaches.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnTaches.ForeColor = System.Drawing.Color.White;
+            this.btnTaches.Location = new System.Drawing.Point(0, 180);
+            this.btnTaches.Name = "btnTaches";
+            this.btnTaches.Size = new System.Drawing.Size(250, 50);
+            this.btnTaches.TabIndex = 3;
+            this.btnTaches.Text = "  Mes Tâches";
+            this.btnTaches.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTaches.UseVisualStyleBackColor = true;
+            this.btnTaches.Click += new System.EventHandler(this.menuMesTaches_Click);
             // 
-            // menuQuitter
+            // btnProjets
             // 
-            this.menuQuitter.Name = "menuQuitter";
-            this.menuQuitter.Size = new System.Drawing.Size(217, 34);
-            this.menuQuitter.Text = "Quitter";
-            this.menuQuitter.Click += new System.EventHandler(this.menuQuitter_Click);
+            this.btnProjets.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProjets.FlatAppearance.BorderSize = 0;
+            this.btnProjets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProjets.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnProjets.ForeColor = System.Drawing.Color.White;
+            this.btnProjets.Location = new System.Drawing.Point(0, 130);
+            this.btnProjets.Name = "btnProjets";
+            this.btnProjets.Size = new System.Drawing.Size(250, 50);
+            this.btnProjets.TabIndex = 2;
+            this.btnProjets.Text = "  Projets";
+            this.btnProjets.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProjets.UseVisualStyleBackColor = true;
+            this.btnProjets.Click += new System.EventHandler(this.menuProjet_Click);
             // 
-            // menuGestion
+            // btnDashboard
             // 
-            this.menuGestion.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuUtilisateurs});
-           this.menuGestion.Name = "menuGestion";
-            this.menuGestion.Size = new System.Drawing.Size(88, 29);
-            this.menuGestion.Text = "Gestion";
+            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnDashboard.Location = new System.Drawing.Point(0, 80);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(250, 50);
+            this.btnDashboard.TabIndex = 1;
+            this.btnDashboard.Text = "  Tableau de Bord";
+            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.menuDashboard_Click);
             // 
-            // menuUtilisateurs
+            // lblLogo
             // 
-            this.menuUtilisateurs.Name = "menuUtilisateurs";
-            this.menuUtilisateurs.Size = new System.Drawing.Size(200, 34);
-            this.menuUtilisateurs.Text = "Utilisateurs";
-            this.menuUtilisateurs.Click += new System.EventHandler(this.menuUtilisateurs_Click);
-            // 
-            // menuProjet
-            // 
-            this.menuProjet.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuCreerProjet});
-            this.menuProjet.Name = "menuProjet";
-            this.menuProjet.Size = new System.Drawing.Size(74, 29);
-            this.menuProjet.Text = "Projet";
-            this.menuProjet.Click += new System.EventHandler(this.menuProjet_Click);
-            // 
-            // menuCreerProjet
-            // 
-            this.menuCreerProjet.Name = "menuCreerProjet";
-            this.menuCreerProjet.Size = new System.Drawing.Size(243, 34);
-            this.menuCreerProjet.Text = "Créer un projet";
-            this.menuCreerProjet.Click += new System.EventHandler(this.menuCreerProjet_Click);
-            // 
-            // menuTache
-            // 
-            this.menuTache.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuMesTaches,
-            this.menuToutesTaches});
-            this.menuTache.Name = "menuTache";
-            this.menuTache.Size = new System.Drawing.Size(70, 29);
-            this.menuTache.Text = "Tâche";
-            this.menuTache.Click += new System.EventHandler(this.menuTache_Click);
-            // 
-            // menuMesTaches
-            // 
-            this.menuMesTaches.Name = "menuMesTaches";
-            this.menuMesTaches.Size = new System.Drawing.Size(270, 34);
-            this.menuMesTaches.Text = "Mes tâches";
-            this.menuMesTaches.Click += new System.EventHandler(this.menuMesTaches_Click);
-            // 
-            // menuToutesTaches
-            // 
-            this.menuToutesTaches.Name = "menuToutesTaches";
-            this.menuToutesTaches.Size = new System.Drawing.Size(270, 34);
-            this.menuToutesTaches.Text = "Toutes les tâches";
-            this.menuToutesTaches.Click += new System.EventHandler(this.menuToutesTaches_Click);
-            // 
-            // pnlMainContent
-            // 
-            this.pnlMainContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMainContent.Location = new System.Drawing.Point(0, 85);
-            this.pnlMainContent.Name = "pnlMainContent";
-            this.pnlMainContent.Size = new System.Drawing.Size(1200, 575);
-            this.pnlMainContent.TabIndex = 3;
+            this.lblLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            this.lblLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblLogo.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.lblLogo.ForeColor = System.Drawing.Color.White;
+            this.lblLogo.Location = new System.Drawing.Point(0, 0);
+            this.lblLogo.Name = "lblLogo";
+            this.lblLogo.Size = new System.Drawing.Size(250, 80);
+            this.lblLogo.TabIndex = 0;
+            this.lblLogo.Text = "GestionProjet";
+            this.lblLogo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlHeader
             // 
-            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.pnlHeader.Controls.Add(this.lblBienvenue);
+            this.pnlHeader.BackColor = System.Drawing.Color.White;
+            this.pnlHeader.Controls.Add(this.btnMinimize);
+            this.pnlHeader.Controls.Add(this.btnClose);
+            this.pnlHeader.Controls.Add(this.pnlUser);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHeader.Location = new System.Drawing.Point(0, 35);
+            this.pnlHeader.Location = new System.Drawing.Point(250, 0);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(1200, 50);
-            this.pnlHeader.TabIndex = 4;
+            this.pnlHeader.Size = new System.Drawing.Size(950, 80);
+            this.pnlHeader.TabIndex = 1;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnClose.Location = new System.Drawing.Point(910, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(40, 30);
+            this.btnClose.TabIndex = 3;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += (s, e) => System.Windows.Forms.Application.Exit();
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnMinimize.Location = new System.Drawing.Point(870, 0);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(40, 30);
+            this.btnMinimize.TabIndex = 4;
+            this.btnMinimize.Text = "-";
+            this.btnMinimize.UseVisualStyleBackColor = true;
+            this.btnMinimize.Click += (s, e) => this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            // 
+            // pnlUser
+            // 
+            this.pnlUser.Controls.Add(this.lblBienvenue);
+            this.pnlUser.Controls.Add(this.lblStatus);
+            this.pnlUser.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlUser.Location = new System.Drawing.Point(610, 0);
+            this.pnlUser.Name = "pnlUser";
+            this.pnlUser.Size = new System.Drawing.Size(300, 80);
+            this.pnlUser.TabIndex = 2;
             // 
             // lblBienvenue
             // 
-            this.lblBienvenue.AutoSize = true;
             this.lblBienvenue.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.lblBienvenue.Location = new System.Drawing.Point(20, 10);
+            this.lblBienvenue.Location = new System.Drawing.Point(10, 20);
             this.lblBienvenue.Name = "lblBienvenue";
-            this.lblBienvenue.Size = new System.Drawing.Size(111, 28);
-            this.lblBienvenue.TabIndex = 1;
+            this.lblBienvenue.Size = new System.Drawing.Size(280, 25);
+            this.lblBienvenue.TabIndex = 0;
             this.lblBienvenue.Text = "Bienvenue";
-            // 
-            // statusStrip
-            // 
-            this.statusStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lblStatus});
-            this.statusStrip.Location = new System.Drawing.Point(0, 660);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Padding = new System.Windows.Forms.Padding(2, 0, 21, 0);
-            this.statusStrip.Size = new System.Drawing.Size(1200, 32);
-            this.statusStrip.TabIndex = 2;
-            this.statusStrip.Text = "statusStrip";
+            this.lblBienvenue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblStatus
             // 
+            this.lblStatus.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.lblStatus.ForeColor = System.Drawing.Color.Gray;
+            this.lblStatus.Location = new System.Drawing.Point(10, 45);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(258, 25);
-            this.lblStatus.Text = "Connecté à la base de données";
+            this.lblStatus.Size = new System.Drawing.Size(280, 20);
+            this.lblStatus.TabIndex = 1;
+            this.lblStatus.Text = "Status";
+            this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pnlMainContent
+            // 
+            this.pnlMainContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(242)))), ((int)(((byte)(245)))));
+            this.pnlMainContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMainContent.Location = new System.Drawing.Point(250, 80);
+            this.pnlMainContent.Name = "pnlMainContent";
+            this.pnlMainContent.Size = new System.Drawing.Size(950, 640);
+            this.pnlMainContent.TabIndex = 2;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.MainMenuStrip = this.menuStrip;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "MainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GestionProjet - Accueil";
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(242)))), ((int)(((byte)(245)))));
+            this.ClientSize = new System.Drawing.Size(1200, 720);
             this.Controls.Add(this.pnlMainContent);
             this.Controls.Add(this.pnlHeader);
-            this.Controls.Add(this.menuStrip);
-            this.Controls.Add(this.statusStrip);
-            this.menuStrip.ResumeLayout(false);
-            this.menuStrip.PerformLayout();
-            this.statusStrip.ResumeLayout(false);
-            this.statusStrip.PerformLayout();
+            this.Controls.Add(this.pnlSidebar);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Gestion de Projets";
+            this.pnlSidebar.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
-            this.pnlHeader.PerformLayout();
+            this.pnlUser.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
-
         }
     }
 }

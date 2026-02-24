@@ -1,5 +1,5 @@
 using System;
-using System.Collections.Generic;
+using System.Windows.Forms;
 using GestionProjet.Models;
 using GestionProjet.Repositories;
 using GestionProjet.Views;
@@ -10,6 +10,7 @@ namespace GestionProjet.Controllers
     {
         private readonly KanbanForm _kanbanForm;
         private readonly ITacheRepository _tacheRepository;
+        private readonly IProjetRepository _projetRepository;
         private readonly Projet _projet;
         private readonly Utilisateur _utilisateurCourant;
 
@@ -19,6 +20,7 @@ namespace GestionProjet.Controllers
             _projet = projet;
             _utilisateurCourant = utilisateur;
             _tacheRepository = new TacheRepository();
+            _projetRepository = new ProjetRepository();
             
             _kanbanForm.SetController(this, _projet);
             CurrentForm = kanbanForm;
@@ -55,34 +57,63 @@ namespace GestionProjet.Controllers
 
         public void AjouterTache()
         {
-            // Ici, vous pourriez ouvrir un TacheForm pour saisir les détails
-            // Pour l'exemple, on crée une tâche rapide
-            string titre = Microsoft.VisualBasic.Interaction.InputBox("Titre de la tâche :", "Nouvelle Tâche", "");
-            if (!string.IsNullOrWhiteSpace(titre))
+            try
             {
-                var nouvelleTache = new Tache
+                var statuts = _tacheRepository.GetStatuts();
+                var priorites = _tacheRepository.GetPriorites();
+                var membres = _projetRepository.GetMembres(_projet.Id);
+
+                using (var form = new TacheForm(null, statuts, priorites, membres))
                 {
-                    Titre = titre,
-                    ProjetId = _projet.Id,
-                    StatutId = 1, // "À faire"
-                    AssigneeId = _utilisateurCourant.Id
-                };
-                
-                _tacheRepository.Add(nouvelleTache);
-                ChargerTaches();
+                    if (form.ShowDialog() == DialogResult.OK)
+                    {
+                        var nouvelleTache = form.Tache;
+                        nouvelleTache.ProjetId = _projet.Id;
+                        _tacheRepository.Add(nouvelleTache);
+                        ChargerTaches();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                AfficherErreur($"Erreur lors de l'ajout : {ex.Message}");
             }
         }
 
         public void ModifierTache(Tache tache)
         {
-            // Permet de changer de statut par exemple
-            var statuts = _tacheRepository.GetStatuts();
-            // (Logique simplifiée pour changer de colonne en cliquant)
-            int indexActuel = statuts.FindIndex(s => s.Id == tache.StatutId);
-            int prochainIndex = (indexActuel + 1) % statuts.Count;
-            
-            _tacheRepository.UpdateStatut(tache.Id, statuts[prochainIndex].Id);
-            ChargerTaches();
+            try
+            {
+                var statuts = _tacheRepository.GetStatuts();
+                var priorites = _tacheRepository.GetPriorites();
+                var membres = _projetRepository.GetMembres(_projet.Id);
+
+                using (var form = new TacheForm(tache, statuts, priorites, membres))
+                {
+                    if (form.ShowDialog() == DialogResult.OK)
+                    {
+                        _tacheRepository.Update(form.Tache);
+                        ChargerTaches();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                AfficherErreur($"Erreur lors de la modification : {ex.Message}");
+            }
+        }
+
+        public void ChangerStatutTache(Tache tache, int nouveauStatutId)
+        {
+            try
+            {
+                _tacheRepository.UpdateStatut(tache.Id, nouveauStatutId);
+                ChargerTaches();
+            }
+            catch (Exception ex)
+            {
+                AfficherErreur($"Erreur lors du changement de statut : {ex.Message}");
+            }
         }
 
         public void RetourProjets()

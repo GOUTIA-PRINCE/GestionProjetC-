@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Windows.Forms;
 using GestionProjet.Models;
 using GestionProjet.Repositories;
 using GestionProjet.Views;
@@ -38,24 +39,49 @@ namespace GestionProjet.Controllers
             }
         }
 
-        public void CreerProjet(string nom, string description)
+        public void AjouterProjet()
         {
             try
             {
-                var projet = new Projet
+                using (var form = new ProjetEditForm())
                 {
-                    Nom = nom,
-                    Description = description,
-                    CreateurId = _utilisateurCourant.Id
-                };
-                
-                _projetRepository.Add(projet);
-                ChargerProjets();
-                AfficherMessage("Projet créé avec succès !");
+                    if (form.ShowDialog() == DialogResult.OK)
+                    {
+                        var projet = form.Projet;
+                        projet.CreateurId = _utilisateurCourant.Id;
+                        _projetRepository.Add(projet);
+                        
+                        // Ajouter le créateur comme membre par défaut
+                        _projetRepository.AjouterMembre(projet.Id, _utilisateurCourant.Id, "Propriétaire");
+                        
+                        ChargerProjets();
+                        AfficherMessage("Projet créé avec succès !");
+                    }
+                }
             }
             catch (Exception ex)
             {
                 AfficherErreur($"Erreur lors de la création : {ex.Message}");
+            }
+        }
+
+        public void ModifierProjet(Projet projet)
+        {
+            try
+            {
+                using (var form = new ProjetEditForm(projet))
+                {
+                    if (form.ShowDialog() == DialogResult.OK)
+                    {
+                        _projetRepository.Update(form.Projet);
+                        ChargerProjets();
+                        AfficherMessage("Projet mis à jour !");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                AfficherErreur($"Erreur lors de la modification : {ex.Message}");
             }
         }
 

@@ -32,6 +32,7 @@ namespace GestionProjet.Controllers
             int nbProjets = projetRepo.GetByMembre(_utilisateurCourant.Id).Count;
             int nbTaches = tacheRepo.GetAllByAssignee(_utilisateurCourant.Id).Count;
             
+            dashboard.SetController(this);
             dashboard.SetStats(nbProjets, nbTaches);
             _mainForm.ChargerVue(dashboard);
         }
@@ -40,7 +41,7 @@ namespace GestionProjet.Controllers
         {
             var utilisateurForm = new UtilisateurForm();
             var utilisateurController = new UtilisateurController(utilisateurForm);
-            utilisateurForm.Show();
+            _mainForm.ChargerVue(utilisateurForm);
         }
 
         public void OuvrirGestionProjets()
@@ -50,23 +51,9 @@ namespace GestionProjet.Controllers
             _mainForm.ChargerVue(projetForm);
         }
 
-        public void OuvrirCreationProjet()
-        {
-            var projetForm = new ProjetForm();
-            var projetController = new ProjetController(projetForm, _utilisateurCourant);
-            _mainForm.ChargerVue(projetForm);
-            
-            string nom = Microsoft.VisualBasic.Interaction.InputBox("Nom du projet :", "Nouveau Projet", "");
-            if (!string.IsNullOrWhiteSpace(nom))
-            {
-                projetController.CreerProjet(nom, "");
-            }
-        }
-
         public void OuvrirMesTaches()
         {
-            // Ouvre le Kanban pour les tâches de l'utilisateur
-            // Pour l'instant on ouvre le Kanban du premier projet ou une vue globale
+            // Ouvre le Kanban pour les tâches de l'utilisateur sur son premier projet
             var projetRepo = new Repositories.ProjetRepository();
             var projets = projetRepo.GetByMembre(_utilisateurCourant.Id);
             
@@ -78,14 +65,11 @@ namespace GestionProjet.Controllers
             }
             else
             {
-                MessageBox.Show("Vous n'avez aucun projet pour afficher des tâches.");
+                AfficherMessage("Vous n'avez aucun projet pour afficher des tâches.");
+                OuvrirGestionProjets();
             }
         }
 
-        public void OuvrirToutesTaches()
-        {
-             OuvrirMesTaches(); // On peut affiner plus tard
-        }
         public void Deconnexion()
         {
             if (ConfirmerAction("Voulez-vous vraiment vous déconnecter ?"))

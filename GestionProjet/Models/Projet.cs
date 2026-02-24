@@ -11,6 +11,7 @@ namespace GestionProjet.Models
         public DateTime DateCreation { get; set; }
         public DateTime? DateFinPrevue { get; set; }
         public int? CreateurId { get; set; }
+        public int Progression { get; set; } // Pourcentage d'avancement
 
         // Propriété de navigation (facultatif selon votre besoin)
         public Utilisateur Createur { get; set; }
@@ -20,6 +21,7 @@ namespace GestionProjet.Models
         {
             DateCreation = DateTime.Now;
             Taches = new List<Tache>();
+            Progression = 0;
         }
     }
 }
