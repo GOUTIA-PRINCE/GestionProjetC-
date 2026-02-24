@@ -70,6 +70,13 @@ namespace GestionProjet.Controllers
             }
         }
 
+        public void OuvrirAnalyse()
+        {
+            var analyseForm = new AnalyseForm();
+            var analyseController = new AnalyseController(analyseForm, _utilisateurCourant);
+            _mainForm.ChargerVue(analyseForm);
+        }
+
         public void Deconnexion()
         {
             if (ConfirmerAction("Voulez-vous vraiment vous déconnecter ?"))

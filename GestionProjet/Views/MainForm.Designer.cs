@@ -11,12 +11,14 @@
         private System.Windows.Forms.Button btnProjets;
         private System.Windows.Forms.Button btnTaches;
         private System.Windows.Forms.Button btnUtilisateurs;
+        private System.Windows.Forms.Button btnAnalyse;
         private System.Windows.Forms.Button btnDeconnexion;
         private System.Windows.Forms.Label lblBienvenue;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Panel pnlUser;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnMinimize;
+        private System.Windows.Forms.LinkLabel lnkDeconnexion;
 
         protected override void Dispose(bool disposing)
         {
@@ -31,6 +33,7 @@
         {
             this.pnlSidebar = new System.Windows.Forms.Panel();
             this.btnDeconnexion = new System.Windows.Forms.Button();
+            this.btnAnalyse = new System.Windows.Forms.Button();
             this.btnUtilisateurs = new System.Windows.Forms.Button();
             this.btnTaches = new System.Windows.Forms.Button();
             this.btnProjets = new System.Windows.Forms.Button();
@@ -42,6 +45,7 @@
             this.pnlUser = new System.Windows.Forms.Panel();
             this.lblBienvenue = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
+            this.lnkDeconnexion = new System.Windows.Forms.LinkLabel();
             this.pnlMainContent = new System.Windows.Forms.Panel();
             this.pnlSidebar.SuspendLayout();
             this.pnlHeader.SuspendLayout();
@@ -52,6 +56,7 @@
             // 
             this.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             this.pnlSidebar.Controls.Add(this.btnDeconnexion);
+            this.pnlSidebar.Controls.Add(this.btnAnalyse);
             this.pnlSidebar.Controls.Add(this.btnUtilisateurs);
             this.pnlSidebar.Controls.Add(this.btnTaches);
             this.pnlSidebar.Controls.Add(this.btnProjets);
@@ -94,6 +99,22 @@
             this.btnUtilisateurs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUtilisateurs.UseVisualStyleBackColor = true;
             this.btnUtilisateurs.Click += new System.EventHandler(this.menuUtilisateurs_Click);
+            // 
+            // btnAnalyse
+            // 
+            this.btnAnalyse.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAnalyse.FlatAppearance.BorderSize = 0;
+            this.btnAnalyse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnalyse.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnAnalyse.ForeColor = System.Drawing.Color.White;
+            this.btnAnalyse.Location = new System.Drawing.Point(0, 280);
+            this.btnAnalyse.Name = "btnAnalyse";
+            this.btnAnalyse.Size = new System.Drawing.Size(250, 50);
+            this.btnAnalyse.TabIndex = 6;
+            this.btnAnalyse.Text = "  Analyse";
+            this.btnAnalyse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAnalyse.UseVisualStyleBackColor = true;
+            this.btnAnalyse.Click += new System.EventHandler(this.menuAnalyse_Click);
             // 
             // btnTaches
             // 
@@ -201,11 +222,27 @@
             // 
             this.pnlUser.Controls.Add(this.lblBienvenue);
             this.pnlUser.Controls.Add(this.lblStatus);
+            this.pnlUser.Controls.Add(this.lnkDeconnexion);
             this.pnlUser.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlUser.Location = new System.Drawing.Point(610, 0);
             this.pnlUser.Name = "pnlUser";
             this.pnlUser.Size = new System.Drawing.Size(300, 80);
             this.pnlUser.TabIndex = 2;
+            // 
+            // lnkDeconnexion
+            // 
+            this.lnkDeconnexion.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            this.lnkDeconnexion.AutoSize = true;
+            this.lnkDeconnexion.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.lnkDeconnexion.LinkColor = System.Drawing.Color.Red;
+            this.lnkDeconnexion.Location = new System.Drawing.Point(215, 60);
+            this.lnkDeconnexion.Name = "lnkDeconnexion";
+            this.lnkDeconnexion.Size = new System.Drawing.Size(76, 19);
+            this.lnkDeconnexion.TabIndex = 2;
+            this.lnkDeconnexion.TabStop = true;
+            this.lnkDeconnexion.Text = "Se déconnecter";
+            this.lnkDeconnexion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lnkDeconnexion.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkDeconnexion_LinkClicked);
             // 
             // lblBienvenue
             // 

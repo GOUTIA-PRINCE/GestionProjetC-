@@ -163,13 +163,34 @@ namespace GestionProjet.Views
             };
             card.Controls.Add(lblUser);
 
-            // Drag support
+            // Drag support with movement threshold
+            Point dragStartPoint = Point.Empty;
             card.MouseDown += (s, e) => {
                 if (e.Button == MouseButtons.Left)
-                    card.DoDragDrop(tache, DragDropEffects.Move);
+                    dragStartPoint = e.Location;
             };
 
-            card.DoubleClick += (s, e) => _controller.ModifierTache(tache);
+            card.MouseMove += (s, e) => {
+                if (e.Button == MouseButtons.Left && dragStartPoint != Point.Empty)
+                {
+                    int dragThreshold = 5;
+                    if (Math.Abs(e.X - dragStartPoint.X) > dragThreshold || Math.Abs(e.Y - dragStartPoint.Y) > dragThreshold)
+                    {
+                        card.DoDragDrop(tache, DragDropEffects.Move);
+                        dragStartPoint = Point.Empty;
+                    }
+                }
+            };
+
+            card.MouseUp += (s, e) => dragStartPoint = Point.Empty;
+
+            // Simple click for details as requested ("lorsque je clique")
+            Action openDetails = () => _controller.ModifierTache(tache);
+            
+            card.Click += (s, e) => openDetails();
+            lblTitre.Click += (s, e) => openDetails();
+            lblUser.Click += (s, e) => openDetails();
+            colorBar.Click += (s, e) => openDetails();
 
             return card;
         }

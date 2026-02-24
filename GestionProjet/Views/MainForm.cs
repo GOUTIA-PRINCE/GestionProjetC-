@@ -89,6 +89,12 @@ namespace GestionProjet.Views
             _controller.OuvrirGestionUtilisateurs();
         }
 
+        private void menuAnalyse_Click(object sender, EventArgs e)
+        {
+            SetActiveButton(btnAnalyse);
+            _controller.OuvrirAnalyse();
+        }
+
         private void menuMesTaches_Click(object sender, EventArgs e)
         {
             SetActiveButton(btnTaches);
@@ -108,6 +114,11 @@ namespace GestionProjet.Views
         }
 
         private void menuDeconnexion_Click(object sender, EventArgs e)
+        {
+            _controller.Deconnexion();
+        }
+
+        private void lnkDeconnexion_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             _controller.Deconnexion();
         }

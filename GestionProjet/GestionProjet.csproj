@@ -109,6 +109,7 @@
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Controllers\ProjetController.cs" />
     <Compile Include="Controllers\KanbanController.cs" />
+    <Compile Include="Controllers\AnalyseController.cs" />
     <Compile Include="Data\DatabaseContext.cs" />
     <Compile Include="Models\Utilisateur.cs" />
     <Compile Include="Models\Projet.cs" />
@@ -177,6 +178,12 @@
     </Compile>
     <Compile Include="Views\ProjetEditForm.Designer.cs">
       <DependentUpon>ProjetEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AnalyseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AnalyseForm.Designer.cs">
+      <DependentUpon>AnalyseForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Theme.cs" />
   </ItemGroup>
