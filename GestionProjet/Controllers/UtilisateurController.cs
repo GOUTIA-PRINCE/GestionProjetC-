@@ -10,12 +10,15 @@ namespace GestionProjet.Controllers
     {
         private readonly UtilisateurForm _utilisateurForm;
         private readonly IUtilisateurRepository _utilisateurRepository;
+        private readonly Utilisateur _utilisateurCourant;
 
-        public UtilisateurController(UtilisateurForm utilisateurForm)
+        public UtilisateurController(UtilisateurForm utilisateurForm, Utilisateur utilisateurCourant)
         {
             _utilisateurForm = utilisateurForm;
+            _utilisateurCourant = utilisateurCourant;
             _utilisateurRepository = new UtilisateurRepository();
             _utilisateurForm.SetController(this);
+            _utilisateurForm.SetCurrentUser(utilisateurCourant);
             CurrentForm = utilisateurForm;
             ChargerUtilisateurs();
         }
@@ -59,6 +62,14 @@ namespace GestionProjet.Controllers
         {
             try
             {
+                // Un utilisateur simple ne peut modifier que ses propres informations
+                // L'admin peut modifier tout le monde
+                if (_utilisateurCourant.Role != "Admin" && _utilisateurCourant.Id != utilisateur.Id)
+                {
+                    AfficherErreur("Vous n'avez pas l'autorisation de modifier les informations d'un autre utilisateur.");
+                    return;
+                }
+
                 // Vérifier si l'email existe déjà pour un autre utilisateur
                 var existant = _utilisateurRepository.GetByEmail(utilisateur.Email);
                 if (existant != null && existant.Id != utilisateur.Id)
@@ -81,6 +92,18 @@ namespace GestionProjet.Controllers
         {
             try
             {
+                if (_utilisateurCourant.Role != "Admin")
+                {
+                    AfficherErreur("Seul un administrateur peut supprimer un utilisateur.");
+                    return;
+                }
+
+                if (id == _utilisateurCourant.Id)
+                {
+                    AfficherErreur("Vous ne pouvez pas vous supprimer vous-même.");
+                    return;
+                }
+
                 if (ConfirmerAction("Voulez-vous vraiment supprimer cet utilisateur ?"))
                 {
                     _utilisateurRepository.Delete(id);

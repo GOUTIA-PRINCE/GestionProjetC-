@@ -33,19 +33,38 @@ namespace GestionProjet.Views
             dgvProjets.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dgvProjets.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
 
-            dgvProjets.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Nom", HeaderText = "PROJET", FillWeight = 30 });
-            dgvProjets.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Description", HeaderText = "DESCRIPTION", FillWeight = 40 });
+            dgvProjets.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Nom", HeaderText = "PROJET", FillWeight = 25 });
+            dgvProjets.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Description", HeaderText = "DESCRIPTION", FillWeight = 35 });
             
             // Colonne Progression (Custom Painted)
-            var colProg = new DataGridViewTextBoxColumn { DataPropertyName = "Progression", HeaderText = "AVANCEMENT", FillWeight = 20 };
+            var colProg = new DataGridViewTextBoxColumn { DataPropertyName = "Progression", HeaderText = "AVANCEMENT", FillWeight = 15 };
             dgvProjets.Columns.Add(colProg);
+
+            // Bouton Modifier
+            DataGridViewButtonColumn btnEdit = new DataGridViewButtonColumn();
+            btnEdit.HeaderText = "";
+            btnEdit.Text = "Modifier";
+            btnEdit.UseColumnTextForButtonValue = true;
+            btnEdit.FillWeight = 8;
+            btnEdit.FlatStyle = FlatStyle.Flat;
+            dgvProjets.Columns.Add(btnEdit);
+
+            // Bouton Supprimer
+            DataGridViewButtonColumn btnDelete = new DataGridViewButtonColumn();
+            btnDelete.HeaderText = "";
+            btnDelete.Text = "Supprimer";
+            btnDelete.UseColumnTextForButtonValue = true;
+            btnDelete.FillWeight = 8;
+            btnDelete.FlatStyle = FlatStyle.Flat;
+            btnDelete.DefaultCellStyle.ForeColor = Color.Red;
+            dgvProjets.Columns.Add(btnDelete);
 
             // Bouton pour ouvrir le Kanban
             DataGridViewButtonColumn btnKanban = new DataGridViewButtonColumn();
             btnKanban.HeaderText = "DÉTAILS";
             btnKanban.Text = "Ouvrir";
             btnKanban.UseColumnTextForButtonValue = true;
-            btnKanban.FillWeight = 10;
+            btnKanban.FillWeight = 9;
             btnKanban.FlatStyle = FlatStyle.Flat;
             dgvProjets.Columns.Add(btnKanban);
 
@@ -98,10 +117,28 @@ namespace GestionProjet.Views
 
         private void dgvProjets_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && dgvProjets.Columns[e.ColumnIndex] is DataGridViewButtonColumn)
+            if (e.RowIndex >= 0)
             {
                 var projet = _projets[e.RowIndex];
-                _controller.OuvrirKanban(projet);
+                string headerText = dgvProjets.Columns[e.ColumnIndex].HeaderText;
+                string buttonText = "";
+                if (dgvProjets.Columns[e.ColumnIndex] is DataGridViewButtonColumn btnCol)
+                {
+                    buttonText = btnCol.Text;
+                }
+
+                if (buttonText == "Modifier")
+                {
+                    _controller.ModifierProjet(projet);
+                }
+                else if (buttonText == "Supprimer")
+                {
+                    _controller.SupprimerProjet(projet);
+                }
+                else if (buttonText == "Ouvrir")
+                {
+                    _controller.OuvrirKanban(projet);
+                }
             }
         }
     }

@@ -12,6 +12,7 @@ namespace GestionProjet.Views
         private UtilisateurController _controller;
         private Utilisateur _utilisateurSelectionne;
         private List<Utilisateur> _utilisateurs;
+        private Utilisateur _utilisateurCourant;
 
         public UtilisateurForm()
         {
@@ -23,6 +24,18 @@ namespace GestionProjet.Views
         public void SetController(UtilisateurController controller)
         {
             _controller = controller;
+        }
+
+        public void SetCurrentUser(Utilisateur utilisateur)
+        {
+            _utilisateurCourant = utilisateur;
+            
+            // Un utilisateur simple ne peut pas ajouter de nouveaux utilisateurs
+            if (_utilisateurCourant.Role != "Admin")
+            {
+                btnAjouter.Enabled = false;
+                chkEstActif.Enabled = false; // Ne peut pas changer le statut actif/inactif
+            }
         }
 
         private void ConfigurationDataGridView()
@@ -56,7 +69,22 @@ namespace GestionProjet.Views
                 {
                     _utilisateurSelectionne = utilisateur;
                     AfficherUtilisateurDansFormulaire(utilisateur);
+
+                    // Gérer les permissions sur les boutons
+                    bool peutModifier = _utilisateurCourant.Role == "Admin" || _utilisateurCourant.Id == utilisateur.Id;
+                    bool peutSupprimer = _utilisateurCourant.Role == "Admin" && _utilisateurCourant.Id != utilisateur.Id;
+
+                    btnModifier.Enabled = peutModifier;
+                    btnSupprimer.Enabled = peutSupprimer;
                 }
+            }
+            else
+            {
+                ViderChamps();
+                // Par défaut, si rien n'est sélectionné, on peut ajouter si on est Admin
+                btnAjouter.Enabled = (_utilisateurCourant?.Role == "Admin");
+                btnModifier.Enabled = false;
+                btnSupprimer.Enabled = false;
             }
         }
 

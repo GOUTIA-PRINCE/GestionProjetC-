@@ -85,6 +85,23 @@ namespace GestionProjet.Controllers
             }
         }
 
+        public void SupprimerProjet(Projet projet)
+        {
+            try
+            {
+                if (ConfirmerAction($"Voulez-vous vraiment supprimer le projet '{projet.Nom}' ? Cela supprimera également toutes ses tâches."))
+                {
+                    _projetRepository.Delete(projet.Id);
+                    ChargerProjets();
+                    AfficherMessage("Projet supprimé !");
+                }
+            }
+            catch (Exception ex)
+            {
+                AfficherErreur($"Erreur lors de la suppression : {ex.Message}");
+            }
+        }
+
         public void OuvrirKanban(Projet projet)
         {
             var kanbanForm = new KanbanForm();

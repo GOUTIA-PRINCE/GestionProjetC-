@@ -33,7 +33,7 @@ namespace GestionProjet.Views
             this.lblProjetTitre.Size = new System.Drawing.Size(200, 26);
             this.lblProjetTitre.Text = "Kanban : Projet";
 
-            // btnAjouterTache
+            this.btnAjouterTache.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAjouterTache.Location = new System.Drawing.Point(750, 20);
             this.btnAjouterTache.Name = "btnAjouterTache";
             this.btnAjouterTache.Size = new System.Drawing.Size(120, 35);
@@ -41,7 +41,7 @@ namespace GestionProjet.Views
             this.btnAjouterTache.UseVisualStyleBackColor = true;
             this.btnAjouterTache.Click += new System.EventHandler(this.btnAjouterTache_Click);
 
-            // btnRetour
+            this.btnRetour.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRetour.Location = new System.Drawing.Point(880, 20);
             this.btnRetour.Name = "btnRetour";
             this.btnRetour.Size = new System.Drawing.Size(80, 35);
@@ -49,7 +49,9 @@ namespace GestionProjet.Views
             this.btnRetour.UseVisualStyleBackColor = true;
             this.btnRetour.Click += new System.EventHandler(this.btnRetour_Click);
 
-            // pnlKanban
+            this.pnlKanban.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlKanban.ColumnCount = 1;
             this.pnlKanban.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.pnlKanban.Location = new System.Drawing.Point(20, 70);

@@ -163,6 +163,25 @@ namespace GestionProjet.Views
             };
             card.Controls.Add(lblUser);
 
+            var btnDeleteTask = new Button
+            {
+                Text = "×",
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
+                Location = new Point(195, 2),
+                Width = 22,
+                Height = 22,
+                FlatStyle = FlatStyle.Flat,
+                ForeColor = Color.Red,
+                BackColor = Color.Transparent,
+                Cursor = Cursors.Hand
+            };
+            btnDeleteTask.FlatAppearance.BorderSize = 0;
+            btnDeleteTask.Click += (s, e) => {
+                _controller.SupprimerTache(tache);
+            };
+            card.Controls.Add(btnDeleteTask);
+            btnDeleteTask.BringToFront();
+
             // Drag support with movement threshold
             Point dragStartPoint = Point.Empty;
             card.MouseDown += (s, e) => {

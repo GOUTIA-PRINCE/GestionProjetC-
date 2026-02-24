@@ -22,7 +22,7 @@ namespace GestionProjet.Repositories
             using (var conn = _context.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT id, nom, email, date_creation, est_actif FROM utilisateurs WHERE est_actif = true ORDER BY nom";
+                string query = "SELECT id, nom, email, date_creation, est_actif, role FROM utilisateurs WHERE est_actif = true ORDER BY nom";
 
                 using (var cmd = new MySqlCommand(query, conn))
                 using (var reader = cmd.ExecuteReader())
@@ -35,7 +35,8 @@ namespace GestionProjet.Repositories
                             Nom = reader.GetString("nom"),
                             Email = reader.GetString("email"),
                             DateCreation = reader.GetDateTime("date_creation"),
-                            EstActif = reader.GetBoolean("est_actif")
+                            EstActif = reader.GetBoolean("est_actif"),
+                            Role = reader.IsDBNull(reader.GetOrdinal("role")) ? "User" : reader.GetString("role")
                         });
                     }
                 }
@@ -49,7 +50,7 @@ namespace GestionProjet.Repositories
             using (var conn = _context.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT id, nom, email, date_creation, est_actif FROM utilisateurs WHERE id = @id";
+                string query = "SELECT id, nom, email, date_creation, est_actif, role FROM utilisateurs WHERE id = @id";
 
                 using (var cmd = new MySqlCommand(query, conn))
                 {
@@ -65,7 +66,8 @@ namespace GestionProjet.Repositories
                                 Nom = reader.GetString("nom"),
                                 Email = reader.GetString("email"),
                                 DateCreation = reader.GetDateTime("date_creation"),
-                                EstActif = reader.GetBoolean("est_actif")
+                                EstActif = reader.GetBoolean("est_actif"),
+                                Role = reader.IsDBNull(reader.GetOrdinal("role")) ? "User" : reader.GetString("role")
                             };
                         }
                     }
@@ -79,7 +81,7 @@ namespace GestionProjet.Repositories
             using (var conn = _context.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT id, nom, email, mot_de_passe, date_creation, est_actif FROM utilisateurs WHERE email = @email";
+                string query = "SELECT id, nom, email, mot_de_passe, date_creation, est_actif, role FROM utilisateurs WHERE email = @email";
 
                 using (var cmd = new MySqlCommand(query, conn))
                 {
@@ -96,7 +98,8 @@ namespace GestionProjet.Repositories
                                 Email = reader.GetString("email"),
                                 MotDePasse = reader.GetString("mot_de_passe"),
                                 DateCreation = reader.GetDateTime("date_creation"),
-                                EstActif = reader.GetBoolean("est_actif")
+                                EstActif = reader.GetBoolean("est_actif"),
+                                Role = reader.IsDBNull(reader.GetOrdinal("role")) ? "User" : reader.GetString("role")
                             };
                         }
                     }
@@ -110,8 +113,8 @@ namespace GestionProjet.Repositories
             using (var conn = _context.GetConnection())
             {
                 conn.Open();
-                string query = @"INSERT INTO utilisateurs (nom, email, mot_de_passe, date_creation, est_actif) 
-                               VALUES (@nom, @email, SHA2(@motDePasse, 256), @dateCreation, @estActif)";
+                string query = @"INSERT INTO utilisateurs (nom, email, mot_de_passe, date_creation, est_actif, role) 
+                               VALUES (@nom, @email, SHA2(@motDePasse, 256), @dateCreation, @estActif, @role)";
 
                 using (var cmd = new MySqlCommand(query, conn))
                 {
@@ -120,6 +123,7 @@ namespace GestionProjet.Repositories
                     cmd.Parameters.AddWithValue("@motDePasse", utilisateur.MotDePasse);
                     cmd.Parameters.AddWithValue("@dateCreation", DateTime.Now);
                     cmd.Parameters.AddWithValue("@estActif", true);
+                    cmd.Parameters.AddWithValue("@role", string.IsNullOrEmpty(utilisateur.Role) ? "User" : utilisateur.Role);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -132,7 +136,7 @@ namespace GestionProjet.Repositories
             {
                 conn.Open();
                 string query = @"UPDATE utilisateurs 
-                               SET nom = @nom, email = @email, est_actif = @estActif 
+                               SET nom = @nom, email = @email, est_actif = @estActif, role = @role 
                                WHERE id = @id";
 
                 using (var cmd = new MySqlCommand(query, conn))
@@ -141,6 +145,7 @@ namespace GestionProjet.Repositories
                     cmd.Parameters.AddWithValue("@nom", utilisateur.Nom);
                     cmd.Parameters.AddWithValue("@email", utilisateur.Email);
                     cmd.Parameters.AddWithValue("@estActif", utilisateur.EstActif);
+                    cmd.Parameters.AddWithValue("@role", string.IsNullOrEmpty(utilisateur.Role) ? "User" : utilisateur.Role);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -168,7 +173,7 @@ namespace GestionProjet.Repositories
             using (var conn = _context.GetConnection())
             {
                 conn.Open();
-                string query = @"SELECT id, nom, email, date_creation, est_actif 
+                string query = @"SELECT id, nom, email, date_creation, est_actif, role 
                                FROM utilisateurs 
                                WHERE email = @email AND mot_de_passe = SHA2(@motDePasse, 256) AND est_actif = true";
 
@@ -187,7 +192,8 @@ namespace GestionProjet.Repositories
                                 Nom = reader.GetString("nom"),
                                 Email = reader.GetString("email"),
                                 DateCreation = reader.GetDateTime("date_creation"),
-                                EstActif = reader.GetBoolean("est_actif")
+                                EstActif = reader.GetBoolean("est_actif"),
+                                Role = reader.IsDBNull(reader.GetOrdinal("role")) ? "User" : reader.GetString("role")
                             };
                         }
                     }

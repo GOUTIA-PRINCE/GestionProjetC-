@@ -10,6 +10,7 @@ namespace GestionProjet.Models
         public string MotDePasse { get; set; }
         public DateTime DateCreation { get; set; }
         public bool EstActif { get; set; }
+        public string Role { get; set; } // "Admin" ou "User"
 
         // Constructeur par défaut
         public Utilisateur()

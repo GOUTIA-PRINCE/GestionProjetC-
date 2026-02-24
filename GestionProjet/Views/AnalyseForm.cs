@@ -116,9 +116,12 @@ namespace GestionProjet.Views
                     Rectangle barRect = new Rectangle(x + (i * spacing), chartArea.Height - h - 40, barWidth, h);
                     
                     // Shadow or subtle gradient would be nice, let's just do a nice color
-                    using (var brush = new System.Drawing.Drawing2D.LinearGradientBrush(barRect, Color.FromArgb(63, 81, 181), Color.FromArgb(103, 119, 239), 90))
+                    if (h > 0)
                     {
-                        g.FillRectangle(brush, barRect);
+                        using (var brush = new System.Drawing.Drawing2D.LinearGradientBrush(barRect, Color.FromArgb(63, 81, 181), Color.FromArgb(103, 119, 239), 90))
+                        {
+                            g.FillRectangle(brush, barRect);
+                        }
                     }
 
                     // Label count

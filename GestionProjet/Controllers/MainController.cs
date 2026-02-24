@@ -40,7 +40,7 @@ namespace GestionProjet.Controllers
         public void OuvrirGestionUtilisateurs()
         {
             var utilisateurForm = new UtilisateurForm();
-            var utilisateurController = new UtilisateurController(utilisateurForm);
+            var utilisateurController = new UtilisateurController(utilisateurForm, _utilisateurCourant);
             _mainForm.ChargerVue(utilisateurForm);
         }
 

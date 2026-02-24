@@ -116,6 +116,23 @@ namespace GestionProjet.Controllers
             }
         }
 
+        public void SupprimerTache(Tache tache)
+        {
+            try
+            {
+                if (ConfirmerAction($"Voulez-vous vraiment supprimer la tâche '{tache.Titre}' ?"))
+                {
+                    _tacheRepository.Delete(tache.Id);
+                    ChargerTaches();
+                    AfficherMessage("Tâche supprimée !");
+                }
+            }
+            catch (Exception ex)
+            {
+                AfficherErreur($"Erreur lors de la suppression : {ex.Message}");
+            }
+        }
+
         public void RetourProjets()
         {
             var projetForm = new ProjetForm();
