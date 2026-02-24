@@ -123,10 +123,12 @@ namespace GestionProjet.Views
             _controller.Deconnexion();
         }
 
+        public bool EstEnDeconnexion { get; set; } = false;
+
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             base.OnFormClosing(e);
-            if (e.CloseReason == CloseReason.UserClosing)
+            if (e.CloseReason == CloseReason.UserClosing && !EstEnDeconnexion)
             {
                 e.Cancel = true;
                 _controller.QuitterApplication();

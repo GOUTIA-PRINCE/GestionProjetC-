@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|d:\\etudes\\licence\\semestre 1\\c#\\projet\\gestionprojet\\gestionprojet\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|d:\\etudes\\licence\\semestre 1\\c#\\projet\\gestionprojet\\gestionprojet\\views\\analyseform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|D:\\Etudes\\licence\\semestre 1\\C#\\projet\\GestionProjet\\gestionprojet\\views\\analyseform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63C7F5D5-84BA-4903-83E6-4145919F6041}|GestionProjet\\GestionProjet.csproj|solutionrelative:gestionprojet\\views\\analyseform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -199,8 +199,7 @@
               "RelativeToolTip": "GestionProjet\\Views\\AnalyseForm.Designer.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAYwB0AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-24T09:37:51.705Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-24T09:37:51.705Z"
             },
             {
               "$type": "Document",

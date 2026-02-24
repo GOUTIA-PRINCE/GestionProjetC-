@@ -81,7 +81,10 @@ namespace GestionProjet.Controllers
         {
             if (ConfirmerAction("Voulez-vous vraiment vous déconnecter ?"))
             {
-                CurrentForm.Close();
+                BaseController.MainView = null;
+                _mainForm.EstEnDeconnexion = true;
+                _mainForm.Close();
+                
                 var loginForm = new LoginForm();
                 var loginController = new LoginController(loginForm);
                 loginForm.Show();
