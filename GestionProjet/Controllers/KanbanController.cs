@@ -31,6 +31,9 @@ namespace GestionProjet.Controllers
         /// <summary>Repository pour accéder aux données des projets (membres).</summary>
         private readonly IProjetRepository _projetRepository;
 
+        /// <summary>Repository pour récupérer tous les utilisateurs actifs.</summary>
+        private readonly IUtilisateurRepository _utilisateurRepository;
+
         /// <summary>Le projet dont on affiche le tableau Kanban.</summary>
         private readonly Projet _projet;
 
@@ -51,6 +54,7 @@ namespace GestionProjet.Controllers
             _utilisateurCourant = utilisateur;
             _tacheRepository = new TacheRepository();
             _projetRepository = new ProjetRepository();
+            _utilisateurRepository = new UtilisateurRepository();
             
             // Enregistre le contrôleur et le projet dans la vue
             _kanbanForm.SetController(this, _projet);
@@ -106,8 +110,9 @@ namespace GestionProjet.Controllers
             try
             {
                 // Récupération des données de référentiel pour peupler les ComboBox
-                var statuts = _tacheRepository.GetStatuts();
+                var statuts   = _tacheRepository.GetStatuts();
                 var priorites = _tacheRepository.GetPriorites();
+                // Seuls les membres du projet peuvent se voir attribuer une tâche
                 var membres = _projetRepository.GetMembres(_projet.Id);
 
                 using (var form = new TacheForm(null, statuts, priorites, membres))
@@ -140,8 +145,9 @@ namespace GestionProjet.Controllers
             try
             {
                 // Récupération des données de référentiel pour peupler les ComboBox
-                var statuts = _tacheRepository.GetStatuts();
+                var statuts   = _tacheRepository.GetStatuts();
                 var priorites = _tacheRepository.GetPriorites();
+                // Seuls les membres du projet peuvent se voir attribuer une tâche
                 var membres = _projetRepository.GetMembres(_projet.Id);
 
                 // TacheForm est initialisé avec la tâche existante (pré-remplissage)
