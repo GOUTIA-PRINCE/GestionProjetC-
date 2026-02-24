@@ -224,9 +224,9 @@
             this.pnlUser.Controls.Add(this.lblStatus);
             this.pnlUser.Controls.Add(this.lnkDeconnexion);
             this.pnlUser.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlUser.Location = new System.Drawing.Point(610, 0);
+            this.pnlUser.Location = new System.Drawing.Point(510, 0);
             this.pnlUser.Name = "pnlUser";
-            this.pnlUser.Size = new System.Drawing.Size(300, 80);
+            this.pnlUser.Size = new System.Drawing.Size(400, 80);
             this.pnlUser.TabIndex = 2;
             // 
             // lnkDeconnexion
@@ -235,9 +235,9 @@
             this.lnkDeconnexion.AutoSize = true;
             this.lnkDeconnexion.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.lnkDeconnexion.LinkColor = System.Drawing.Color.Red;
-            this.lnkDeconnexion.Location = new System.Drawing.Point(215, 60);
+            this.lnkDeconnexion.Location = new System.Drawing.Point(280, 60);
             this.lnkDeconnexion.Name = "lnkDeconnexion";
-            this.lnkDeconnexion.Size = new System.Drawing.Size(76, 19);
+            this.lnkDeconnexion.Size = new System.Drawing.Size(100, 19);
             this.lnkDeconnexion.TabIndex = 2;
             this.lnkDeconnexion.TabStop = true;
             this.lnkDeconnexion.Text = "Se déconnecter";
@@ -249,7 +249,7 @@
             this.lblBienvenue.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lblBienvenue.Location = new System.Drawing.Point(10, 20);
             this.lblBienvenue.Name = "lblBienvenue";
-            this.lblBienvenue.Size = new System.Drawing.Size(280, 25);
+            this.lblBienvenue.Size = new System.Drawing.Size(380, 25);
             this.lblBienvenue.TabIndex = 0;
             this.lblBienvenue.Text = "Bienvenue";
             this.lblBienvenue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -260,7 +260,7 @@
             this.lblStatus.ForeColor = System.Drawing.Color.Gray;
             this.lblStatus.Location = new System.Drawing.Point(10, 45);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(280, 20);
+            this.lblStatus.Size = new System.Drawing.Size(380, 20);
             this.lblStatus.TabIndex = 1;
             this.lblStatus.Text = "Status";
             this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
